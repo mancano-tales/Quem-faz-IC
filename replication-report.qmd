@@ -1,0 +1,215 @@
+---
+title: "Quem faz Iniciação Científica?"
+subtitle: "Relatório de replicação — desigualdades socioeconômicas no acesso à IC na FFLCH-USP (2010–2022)"
+author:
+  - "Tales Mançano"
+  - "Victor Alcantara"
+date: today
+lang: pt-BR
+format:
+  html:
+    output-file: index.html
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    code-fold: true
+    code-summary: "ver código"
+    df-print: kable
+    embed-resources: true
+execute:
+  warning: false
+  message: false
+knitr:
+  opts_chunk:
+    dev: png
+    dpi: 200
+---
+
+Este relatório executa o pacote de replicação e confronta cada resultado com o
+que foi publicado. Ele não substitui o artigo: serve para que qualquer pessoa
+verifique, número a número, o que sai dos microdados.
+
+Os dados vêm de dois pedidos de acesso à informação ao SIC-USP: o cadastro de
+ingressantes da graduação com o questionário socioeconômico da FUVEST
+(Cod. #243654) e o registro dos projetos de Iniciação Científica no sistema
+Atena (Cod. #243681).
+
+```{r setup}
+source(here::here("R", "setup.R"))
+source(here::here("R", "recode.R"))
+
+painel <- arrow::read_parquet(ARQ_PAINEL)
+
+fflch <- painel |>
+  dplyr::filter(unidade == UNIDADE_FFLCH) |>
+  aplicar_recodificacoes() |>
+  dplyr::mutate(IC = dplyr::coalesce(IC, 0))
+
+coortes <- dplyr::filter(fflch, ano %in% COORTES)     # 2010-2018
+amostra <- dplyr::filter(fflch, ano %in% 2010:2022)   # 2010-2022
+```
+
+# O painel
+
+O painel tem uma linha por estudante ingressante na USP, com as variáveis da
+graduação, as respostas do questionário socioeconômico e o resumo da
+participação em IC.
+
+```{r painel}
+data.frame(
+  Medida = c("Ingressantes na USP", "Ingressantes na FFLCH (2010–2022)",
+             "Estudantes com ao menos uma IC", "Projetos de IC registrados",
+             "Variáveis no painel"),
+  Valor = format(c(nrow(painel), nrow(amostra),
+                   sum(painel$IC == 1, na.rm = TRUE),
+                   sum(painel$qtd_ic, na.rm = TRUE),
+                   ncol(painel)), big.mark = ".")
+)
+```
+
+# Tabela 1 — acesso à IC por coorte
+
+A proporção de estudantes da FFLCH que realizaram IC quase dobra ao longo do
+período, de 9,1% na coorte de 2010 para 15,3% na de 2018.
+
+```{r tabela1}
+tabela1 <- coortes |>
+  dplyr::group_by(ano) |>
+  dplyr::summarise(N = dplyr::n(), `Fez IC` = sum(IC), .groups = "drop") |>
+  dplyr::mutate(`%` = scales::percent(`Fez IC` / N, accuracy = 0.1))
+
+tabela1
+```
+
+# Tabela 2 — taxa de resposta do questionário socioeconômico
+
+O QASE foi respondido por 98,55% dos ingressantes, mas o preenchimento por
+questão é muito desigual. Duas perguntas são inutilizáveis: a ocupação do
+principal contribuinte da família (19,05%) e o INCLUSP (nenhuma resposta).
+
+```{r tabela2}
+questoes <- c(
+  estado_civil    = "Estado civil",
+  ef1             = "Onde cursou o ensino fundamental",
+  ef2             = "Onde cursou o ensino médio",
+  em              = "Tipo de ensino médio",
+  rfm             = "Renda familiar mensal",
+  pessoas_contrib = "Pessoas que contribuem para a renda",
+  pessoas_resid   = "Pessoas que vivem da renda",
+  atv_remu        = "Exerce atividade remunerada",
+  educ_resp1      = "Instrução do responsável 1",
+  educ_resp2      = "Instrução do responsável 2",
+  ocup_resp1      = "Ocupação do principal contribuinte",
+  pretensao_mant  = "Como pretende se manter",
+  inclusp         = "Participação no INCLUSP"
+)
+
+data.frame(
+  `Questão do QASE` = unname(questoes),
+  `% de respostas`  = scales::percent(
+    vapply(names(questoes), function(v) mean(!is.na(amostra[[v]])), numeric(1)),
+    accuracy = 0.01
+  ),
+  check.names = FALSE, row.names = NULL
+)
+```
+
+# Tabela 4 — modelo logístico
+
+A variável dependente é ter realizado ao menos uma IC. A amostra é a das
+coortes 2010–2022 com resposta completa nas variáveis do modelo.
+
+```{r modelo}
+md <- amostra |>
+  dplyr::select(IC, ano, idade, sexo, raca, educ_resp, sfmpct,
+                trabalho, sustento, periodo, class_carreira) |>
+  na.exclude()
+
+reg4 <- glm(IC ~ ano + idade + sexo + raca + educ_resp + sfmpct +
+              trabalho + sustento + periodo + class_carreira,
+            data = md, family = binomial)
+
+coefs <- summary(reg4)$coefficients
+data.frame(
+  Variável          = rownames(coefs),
+  `Valor Z`         = sprintf("%.3f", coefs[, "Estimate"]),
+  `Razão de chance` = sprintf("%.3f", exp(coefs[, "Estimate"])),
+  `Erro padrão`     = sprintf("%.3f", coefs[, "Std. Error"]),
+  `p`               = sprintf("%.3f", coefs[, "Pr(>|z|)"]),
+  check.names = FALSE, row.names = NULL
+)
+```
+
+Os resultados centrais do artigo aparecem aqui: renda familiar per capita e
+escolaridade dos responsáveis têm efeito pequeno, enquanto trabalhar em tempo
+integral e pretender se sustentar por conta própria reduzem substantivamente as
+chances de fazer IC.
+
+## Conferência com a tabela publicada
+
+```{r conferencia}
+data.frame(
+  Estatística = c("Observações", "AIC", "Coef. ano", "Coef. raça (PPI)"),
+  Publicado   = c("16.974", "10537,63", "-0,058", "-0,138"),
+  Reproduzido = c(format(nobs(reg4), big.mark = "."),
+                  sprintf("%.2f", AIC(reg4)),
+                  sprintf("%.3f", coef(reg4)[["ano"]]),
+                  sprintf("%.3f", coef(reg4)[["racaPPI"]]))
+)
+```
+
+# Figuras 1 e 2 — probabilidades preditas
+
+```{r figuras}
+#| fig-width: 9
+#| fig-height: 5
+#| layout-ncol: 1
+
+md$p <- predict(reg4, md, type = "response")
+
+tema_densidade <- ggplot2::theme_bw(base_size = 13) +
+  ggplot2::theme(legend.position = "bottom")
+
+cores_trabalho <- c("Sim, em tempo integral" = "#e97d5a",
+                    "Sim, em tempo parcial"  = "#a3a500",
+                    "Não"                    = "#1bb57f")
+
+md |>
+  dplyr::mutate(trabalho = factor(trabalho, levels = names(cores_trabalho))) |>
+  ggplot2::ggplot(ggplot2::aes(x = p, colour = trabalho, fill = trabalho)) +
+  ggplot2::geom_density(linewidth = 1.1, alpha = 0.5) +
+  ggplot2::scale_fill_manual(values = cores_trabalho) +
+  ggplot2::scale_colour_manual(values = cores_trabalho) +
+  ggplot2::scale_x_continuous(limits = c(0, 0.51)) +
+  ggplot2::labs(x = "Probabilidades preditas", y = "Densidade",
+                colour = "Trabalho", fill = "Trabalho",
+                title = "Figura 1 — vínculo com o trabalho no vestibular") +
+  tema_densidade
+
+cores_sustento <- c("Por conta própria"               = "#e97d5a",
+                    "Com trabalho e apoio da família" = "#00aff6",
+                    "Suporte da família"              = "#a3a500",
+                    "Com bolsa e apoio da família"    = "#1bb57f")
+
+md |>
+  dplyr::filter(sustento != "Outros") |>
+  dplyr::mutate(sustento = factor(as.character(sustento),
+                                  levels = names(cores_sustento))) |>
+  ggplot2::ggplot(ggplot2::aes(x = p, colour = sustento, fill = sustento)) +
+  ggplot2::geom_density(linewidth = 1.1, alpha = 0.5) +
+  ggplot2::scale_fill_manual(values = cores_sustento) +
+  ggplot2::scale_colour_manual(values = cores_sustento) +
+  ggplot2::scale_x_continuous(limits = c(0, 0.51)) +
+  ggplot2::labs(x = "Probabilidades preditas", y = "Densidade",
+                colour = "Sustento", fill = "Sustento",
+                title = "Figura 2 — pretensão de sustento na universidade") +
+  tema_densidade
+```
+
+# Ambiente
+
+```{r sessao}
+#| code-fold: false
+sessionInfo()
+```
