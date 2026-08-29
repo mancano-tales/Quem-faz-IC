@@ -1,0 +1,489 @@
+# Authors: Tales Mançano & Victor Alcantara
+
+# 0. Packages and Setup --------------------------------------------------------
+
+library(pacman)
+p_load(tidyverse,rio,arrow,stargazer)
+
+# Clean memory
+rm(list=ls())
+gc()
+
+## Working Directory ----
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# 1. Import and tidy -----------------------------------------------------------
+
+ic_usp <- read_parquet("ic_usp.parquet")
+
+table(ic_usp$rfm)
+
+ic_usp <- ic_usp %>% mutate(.,
+                  smf = case_when(
+                    
+                    rfm %in% c("Até 1 SM - até R$ 1.045,00",
+                               "Até 1 SM - até R$ 1.100,00",
+                               "Até 1 SM - até R$ 1.212,00",
+                               "Inferior a 1 SM.") ~ .5,
+                    
+                    rfm %in% c("Acima de 1 até 2 SM - de R$ 1.045,01 até R$ 2.090,00",
+                               "Acima de 1 até 2 SM - de R$ 1.100,01 até R$ 2.200,00",
+                               "Acima de 1 até 2 SM - de R$ 1.212,01 até R$ 2.424,00",
+                               "De 1 a 1,9 SM.") ~ 1.5,
+                    
+                    rfm %in% c("Acima de 2 até 3 SM - de R$ 2.090,01 até R$ 3.135,00",
+                               "Acima de 2 até 3 SM - de R$ 2.200,01 até R$ 3.300,00",
+                               "Acima de 2 até 3 SM - de R$ 2.424,01 até R$ 3.636,00",
+                               "De 2 a 2,9 SM.") ~ 2.5,
+                    
+                    rfm %in% c("Acima de 3 até 5 SM - de R$ 3.135,01 até R$ 5.225,00",
+                               "Acima de 3 até 5 SM - de R$ 3.300,01 até R$ 5.500,00",
+                               "Acima de 3 até 5 SM - de R$ 3.636,01 até R$ 6.060,00",
+                               "De 3 a 4,9 SM.") ~ 3.5,
+                    
+                    rfm %in% c("Acima de 5 até 7 SM - de R$ 5.225,01 até R$ 7.315,00", 
+                               "Acima de 5 até 7 SM - de R$ 5.500,01 até R$ 7.700,00", 
+                               "Acima de 5 até 7 SM - de R$ 6.060,01 até R$ 8.484,00",
+                               "De 5 a 6,9 SM.") ~ 6,
+                    
+                    rfm %in% c("Acima de 7 até 10 SM - de R$ 7.315,01 até R$ 10.450,00", 
+                               "Acima de 7 até 10 SM - de R$ 7.700,01 até R$ 11.000,00", 
+                               "Acima de 7 até 10 SM - de R$ 8.484,01 até R$ 12.120,00",
+                               "De 7 a 9,9 SM.") ~ 8.5,
+                    
+                    rfm %in% c("Acima de 10 até 15 SM - de R$ 10.450,01 até R$ 15.675,00", 
+                               "Acima de 10 até 15 SM - de R$ 11.000,01 até R$ 16.500,00", 
+                               "Acima de 10 até 15 SM - de R$ 12.120,01 até R$ 18.180,00",
+                               "Acima de 15 até 20 SM - de R$ 15.675,01 até R$ 20.900,00", 
+                               "Acima de 15 até 20 SM - de R$ 16.500,01 até R$ 22.000,00", 
+                               "Acima de 15 até 20 SM - de R$ 18.180,01 até R$ 24.240,00", 
+                               "De 10 a 14,9 SM.","De 10 a 13,9 SM.",
+                               "De 14 a 19,9 SM.","De 15 a 19,9 SM.") ~ 15,
+                    
+                    rfm %in% c("Acima de 20 SM até 30 SM - de R$ 20.900,01 até R$ 31.350,00", 
+                               "Acima de 20 SM até 30 SM - de R$ 22.000,01 até R$ 33.000,00", 
+                               "Acima de 20 SM até 30 SM - de R$ 24.240,01 até R$ 36.360,00",
+                               "Acima de 30 SM até 50 SM - de R$ 31.350,01 até R$ 52.250,00", 
+                               "Acima de 30 SM até 50 SM - de R$ 33.000,01 até R$ 55.000,00", 
+                               "Acima de 30 SM até 50 SM - de R$ 36.360,01 até R$ 60.600,00",
+                               "Acima de 50 SM - superior a R$ 52.250,00", 
+                               "Acima de 50 SM - superior a R$ 55.000,00", 
+                               "Acima de 50 SM - superior a R$ 60.600,00", 
+                               "Igual ou superior a 20 SM.") ~ 25,
+                    
+                  ),
+                  
+                  qtd_pessoas = case_when(
+                    pessoas_resid == "Uma" ~ 1,
+                    pessoas_resid == "Duas" ~ 2,
+                    pessoas_resid == "Três" ~ 3,
+                    pessoas_resid == "Quatro" ~ 4,
+                    pessoas_resid == "Cinco" ~ 5,
+                    pessoas_resid %in% c("Seis","Seis ou mais","Sete","Oito ou mais") ~ 6,
+                  )
+                  ) %>% mutate(.,
+                               sfmpct = smf/qtd_pessoas,
+                               
+                               IC = ifelse(qtd_ic >= 1,1,0)
+                               )
+
+hist(ic_usp$sfmpct)
+
+table(ic_usp$ano,ic_usp$unidade)
+
+# Bolsas PIBIC 2010
+
+bolsas_cnpq <- import("D:/01 - data/EDUC/CNPQ/painel-investimento-ict-2010/painel-investimento-ict-2010.csv",
+                      encoding="Latin-1")
+
+bolsas_cnpq_usp = bolsas_cnpq %>% filter(SIGLA_PROGRAMA == "PIBIC",
+                                         INSTITUICAO == "Universidade de Sao Paulo",
+                                         GRANDE_AREA %in% c("Ciências Humanas","Lingüística, Letras e Artes"))
+
+sum(bolsas_cnpq_usp$BENEFICIARIO)
+
+bolsas_pibic_usp = ic_usp %>% filter(ano == 2010,PIBIC > 0,unidade=="Faculdade de Filosofia, Letras e Ciências Humanas")
+sum(bolsas_pibic_usp$PIBIC)
+
+table(bolsas_cnpq_usp$GRANDE_AREA)
+
+table(ic_usp$ef1)
+
+# Recorte FFLCH
+
+mydata <- ic_usp %>% filter(unidade == "Faculdade de Filosofia, Letras e Ciências Humanas",ano %in% 2010:2022)
+
+table(mydata$qtd_ic) %>% sum
+
+table(mydata$ano,mydata$qtd_ic)
+
+t1 = mydata %>% group_by(ano) %>% summarise(
+  n = n(),
+  IC = sum(IC,na.rm=T),
+  qtd_IC = sum(qtd_ic,na.rm=T)
+)
+
+export(t1,"../3 - outp/tables/t1-coorte-fflch.xlsx")
+
+# modelo
+
+mydta <- mydata %>% select(IC,ano,periodo,educ_resp1,sexo,raca,idade_ano_vest,sfmpct,atv_remu,class_carreira,pretensao_mant)
+mydta <- mydta %>% rename(idade = idade_ano_vest)
+
+mydta <- mydta %>% mutate(.,
+                          periodo = case_when(
+                          periodo %in% c("diurno","integral","matutino","vespertino") ~ "diurno",
+                          periodo == "noturno" ~ "noturno"
+                          ),
+                          
+                          educ_resp = case_when(
+                          educ_resp1 %in% c("Não estudou","Ensino fundamental incompleto",
+                                              "Ensino fundamental completo",
+                                              "Ensino médio incompleto",
+                                              "Iniciou o Ensino Fundamental, mas abandonou entre a 1ª e a 4ª",
+                                              "Iniciou o Ensino Fundamental, mas abandonou entre a 5ª e a 8ª") ~ "EF incompleto",
+                            
+                          educ_resp1 %in% c("Ensino médio completo",
+                                              "Ensino superior incompleto") ~ "EM completo",
+                          
+                          educ_resp1 %in% c("Ensino superior completo",
+                                            "Mestrado ou doutorado",
+                                            "Pós-Graduação completa",
+                                            "Pós-Graduação incompleta") ~ "ES completo"),
+                          
+                          raca = case_when(
+                            raca %in% c("Parda","Preta / negra","Indígena") ~ "PPI",
+                            raca %in% c("Amarela","Branca") ~ "Brancos"
+                          ),
+                          
+                          trabalho = case_when(
+                            atv_remu %in% c("Sim, em meio período (até 20 horas semanais)",
+                                            "Sim, em tempo semi-integral (de 21 a 32 horas semanais)",
+                                            "Sim, eventualmente","Sim, regularmente, em tempo parcial") ~ "Sim, em tempo parcial",
+                            atv_remu %in% c("Sim, regularmente, em tempo integral") ~ "Sim, em tempo integral",
+                            
+                            atv_remu %in% c("Não") ~ "Não",
+                            
+                          ),
+                          
+                          sustento = case_when(
+                            pretensao_mant %in% c("Com bolsa de estudos",
+                                                  "Com bolsa, trabalhando e contando, ainda, com o apoio da família") ~ "Com bolsa e apoio da família",
+                            
+                            pretensao_mant %in% c("Trabalhando para participar do rateio das despesas da família") ~ "Com trabalho e apoio da família",
+                            
+                            pretensao_mant == "Por conta própria, com recursos oriundos de trabalho remunerado" ~ "Por conta própria",
+                            
+                            pretensao_mant %in% c("Somente com recursos dos pais","Trabalhando, mas contando, para o essencial, com os recursos da família") ~ "Suporte da família",
+                            
+                            pretensao_mant == "Outros" ~ "Outros"
+                          )
+                          
+)
+
+d = is.na(mydta$IC)
+mydta[d,"IC"] <- 0
+
+table(mydta$IC)
+
+t <- prop.table( table(mydta$IC) )
+t <- as.data.frame(t)
+
+# distribution
+t %>% 
+  ggplot(aes(x = Var1, y = Freq)) +
+  theme_bw() +
+  geom_bar(stat = 'identity', alpha = 1, fill = "steelblue", width = 0.5) +  # Adjust bar width and transparency
+  scale_y_continuous(limits = c(0,1),breaks = seq(0,1,.15))+
+  geom_text(aes(label = scales::percent(Freq, accuracy = 0.1)),  # Formato de porcentagem com 1 casa decimal
+            vjust = 1.5, size = 4,col="white") +  # Posição e tamanho do texto
+  labs(x = "Realização de IC", y = "Frequência relativa") +
+  theme(
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 12)
+  )
+                          
+# Modelo
+
+# Regressão logística ----------------------------------------------------------
+
+md <- mydta %>% na.exclude()
+
+md <- md %>% mutate(.,
+                    sustento = factor(sustento,
+                                      levels=c('Suporte da família','Por conta própria','Com bolsa e apoio da família',
+                                               'Com trabalho e apoio da família',"Outros"))
+                    
+                    )
+
+# Agora, ao invés de usar a função para os modelos lineares, mobilizaremos
+# a função para os modelos lineares generalizados:
+
+# Generalized Linear Models (GLM): função para regressão logística
+
+reg1 <- glm(formula = IC ~ ano, 
+           data = md, 
+           family = "binomial")
+
+reg2 <- glm(formula = IC ~ ano + idade + sexo + raca + educ_resp + sfmpct, 
+           data = md, 
+           family = "binomial")
+
+reg3 <- glm(formula = IC ~ ano + idade + sexo + raca + educ_resp + sfmpct + trabalho + sustento, 
+           data = md, 
+           family = "binomial")
+
+reg4 <- glm(formula = IC ~ ano + idade + sexo + raca + educ_resp + sfmpct + trabalho + sustento + class_carreira, 
+            data = md, 
+            family = "binomial")
+
+# Outras maneiras de apresentar os outputs do modelo
+
+# Pacotes necessários
+library(stargazer)
+
+# Criar diretório de saída (se não existir)
+dir.create("3 - outp/tables", recursive = TRUE, showWarnings = FALSE)
+
+# ----------------------------
+# 1. Tabela com log-odds (coeficientes originais)
+# ----------------------------
+stargazer(
+  reg1, reg2, reg3, reg4,
+  nobs = TRUE,
+  type = "html",
+  out = "../3 - outp/tables/reg1-logodds.html"
+)
+
+# ----------------------------
+# 2. Tabela com Odds Ratios e erros-padrão corretos
+# ----------------------------
+
+# Função para extrair OR e SE ajustados
+or_and_se <- function(model) {
+  or <- exp(coef(model))
+  se_logodds <- sqrt(diag(vcov(model)))
+  se_or <- or * se_logodds # Delta method
+  list(or = or, se = se_or)
+}
+
+# Extrair para reg4
+or4 <- or_and_se(reg4)
+
+# Criar tabela
+stargazer(
+  reg4,
+  coef = list(or4$or),
+  se = list(or4$se),
+  nobs = TRUE,
+  type = "html",
+  out = "3 - outp/tables/reg1-oddsratio.html",
+  notes = "Coeficientes expressos como Odds Ratios; erros-padrão ajustados."
+)
+
+
+
+
+
+# Função 'stargazer' do pacote 'stargazer'
+
+stargazer(reg1, reg2, reg3, reg4, nobs = T, type = "html",out="3 - outp/tables/reg1.xls") # mostra o valor de Log-Likelihood
+
+stargazer(reg4,coef = list(exp(coef(reg4))), 
+          nobs = T, type = "html",
+          out="3 - outp/tables/reg1-oddsratio.xls"
+          ) # mostra o valor de Log-Likelihood
+
+stargazer(reg4, 
+          nobs = T, type = "html",
+          out="3 - outp/tables/reg1-zvalue.xls"
+) # mostra o valor de Log-Likelihood
+
+stargazer(reg4,coef = list(exp(coef(reg4)) - 1), 
+          nobs = T, type = "html",
+          out="3 - outp/tables/reg1-probs.xls"
+) # mostra o valor de Log-Likelihood
+
+mydta$p <- predict(object = reg4,mydta,type = 'response')
+
+# Definindo as cores para as categorias administrativas
+colors <- c("Por conta própria" = "#e97d5a",  # Vermelho
+            "Suporte da família" = "#a3a500",  # Verde
+            "Com bolsa e apoio da família" = "#1bb57f",  # Amarelo
+            "Com trabalho e apoio da família" = "#00aff6",  # Azul
+            "Outros " = "grey")  # Rosa
+
+linetypes <- c("Por conta própria" = "solid",    # Linha sólida
+               "Suporte da família" = "dashed",  # Linha tracejada
+               "Com bolsa e apoio da família" = "dotted",           # Linha pontilhada
+               "Com trabalho e apoio da família" = "dotdash",# Linha ponto traço
+               "Outros " = "grey")# Linha traço longo
+
+mydta <- mydta %>% mutate(.,
+                    sustento = factor(sustento,
+                                      levels=c('Por conta própria','Com trabalho e apoio da família',
+                                               'Suporte da família','Com bolsa e apoio da família',
+                                               "Outros"))
+                    
+)
+
+# Criar o gráfico de densidade
+mydta %>% filter(sustento != "Outros") %>%
+  ggplot(aes(x = p, color = sustento,fill=sustento, linetype = sustento)) +
+  geom_density(size = 1.2,alpha=.6) +
+  scale_fill_manual(values = colors) +
+  scale_color_manual(values = colors) +
+  scale_linetype_manual(values = linetypes) +
+  scale_x_continuous(limits = c(0,.51),breaks=seq(0,.5,.25),expand = c(0.001,0.001))+
+  scale_y_continuous(expand = c(0.001,0.001))+
+  labs(x = "Probabilidades preditas",y = "Densidade",color = "Sustento",
+       fill = "Sustento",linetype = "Sustento") +
+  theme_bw(base_size = 15) +
+  theme(
+    plot.title = element_text(hjust = 0.5),
+    
+    axis.text = element_text(size = 18),
+    axis.title = element_text(size = 16),
+    
+    legend.position = "bottom",
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 16)
+  )
+
+# Trabalho
+
+# Definindo as cores para as categorias administrativas
+colors <- c("Sim, em tempo integral" = "#e97d5a",  # Vermelho
+            "Sim, em tempo parcial" = "#a3a500",  # Verde
+            "Não" = "#1bb57f")
+
+linetypes <- c("Sim, em tempo integral" = "solid",  # Vermelho
+            "Sim, em tempo parcial" = "dashed",  # Verde
+            "Não" = "dotted")
+
+mydta <- mydta %>% mutate(.,
+                          trabalho = factor(trabalho,
+                                            levels=c('Sim, em tempo integral',
+                                                     'Sim, em tempo parcial',
+                                                     'Não'))
+                          
+)
+
+# Criar o gráfico de densidade
+mydta %>%
+  ggplot(aes(y = p, color = trabalho)) +
+  geom_boxplot(size = 1.2,alpha=.6) +
+  #scale_fill_manual(values = colors) +
+  scale_color_manual(values = colors) +
+  #scale_linetype_manual(values = linetypes) +
+  #scale_x_continuous(limits = c(0,.51),breaks=seq(0,.5,.25),expand = c(0.001,0.001))+
+  scale_y_continuous(expand = c(0.001,0.001))+
+  labs(y = "Probabilidades preditas",color = "") +
+  theme_bw(base_size = 15) +
+  theme(
+    plot.title = element_text(hjust = 0.5),
+    
+    axis.text = element_text(size = 18),
+    axis.title = element_text(size = 16),
+    legend.position = "bottom",
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 16)
+  )
+# Manipulando o objeto de regressão --------------------------------------------
+
+# Podemos extrair informações de interesse:
+
+# Probabilidades preditas pelo modelo
+mydata.2$phat <- reg$fitted.values
+
+# Vamos analisar as probabilidades preditas antes de avançar
+
+# Distribuição das probabilidades preditas pelo modelo
+mydata.2 %>%
+  ggplot(aes(x = phat))+
+  theme_bw()+
+  geom_histogram(bins = 50)+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0))+
+  labs(x="Probabilidade predita pelo modelo",y="Frequência")
+
+# Por que, em geral, a probabilidade predita é baixa? 
+# [lembrar discriminação da nota de corte]
+
+# Distrib. de probabilidade por tipo de escola
+mydata.2 %>%
+  ggplot(aes(x = phat))+
+  theme_bw()+
+  geom_density(aes(fill=tpEscola),bw=0.02,alpha=.7)+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0))+
+  labs(fill="Escola",x="Probabilidade predita")
+
+mydata.2 %>%
+  ggplot(aes(x = phat))+
+  theme_bw()+
+  geom_density(aes(fill=faixas_rendFamP),bw=0.02,alpha=.7)+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0))+
+  labs(fill="Renda Familiar \n per capta",x="Probabilidade predita")
+
+# Voltando a manipular o objeto de regressão -----------------------------------
+
+# Podemos extrair informações de interesse:
+
+# Coeficientes
+reg$coefficients
+
+# Modelo
+modelo <- reg$model
+
+# Probabilidades preditas
+modelo$phat <- reg$fitted.values
+
+modelo <- relocate(.data = modelo,
+                   NPI,phat,
+                   .after = depAdmin2)
+view(modelo)
+
+# valor de Log-Likelihood (LL)
+logLik(reg)
+
+# Fazendo predições para o modelo
+
+#Exemplo: qual a probabilidade média de ter nota para ingressar na Usp 
+# se a mãe tiver escolaridade 16 e a renda ser 10000
+educMae = c(2,12,16,17)
+rendFamP = c(500,2500,5000,30000) 
+depAdmin2 = c(0,1,1,1)
+
+dados_predicao <- data.frame(educMae,rendFamP,depAdmin2)
+
+dados_predicao$prob_predita = predict(object = reg, 
+                                      newdata = dados_predicao, 
+                                      type = "response")
+
+view(dados_predicao)
+
+#Matriz de confusão para cutoff = 0.10
+# Interpretação: para casos em que a predição com o modelo é de probabilidade
+# maior que 0.10, considere que o indivíduo tem NPI == 1
+
+predito <- predict(reg, type = "response") >= 0.10
+
+observado <- mydata.2$NPI == 1
+
+m_confus <- table(predito,observado)[2:1, 2:1]
+m_confus
+
+data.frame(predito,observado) %>% head()
+
+#(função confusionMatrix do pacote caret)
+confusionMatrix(m_confus)
+
+#função roc do pacote pROC
+ROC <- roc(response = mydata.2$NPI, 
+           predictor = reg$fitted.values)
+
+plot(ROC)
