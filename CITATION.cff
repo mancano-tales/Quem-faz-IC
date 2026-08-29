@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Quem faz Iniciação Científica? — pacote de replicação"
+message: "Se você usar este pacote de replicação, cite o artigo e o repositório."
+type: software
+authors:
+  - family-names: "Mançano"
+    given-names: "Tales"
+    orcid: "https://orcid.org/0000-0001-5923-9743"
+  - family-names: "Alcantara"
+    given-names: "Victor"
+    orcid: "https://orcid.org/0000-0001-8846-9652"
+repository-code: "https://github.com/mancano-tales/Quem-faz-IC"
+license: GPL-2.0
+keywords:
+  - iniciação científica
+  - desigualdades educacionais
+  - educação superior
+  - Brasil
+  - USP
+preferred-citation:
+  type: article
+  title: "Quem faz Iniciação Científica? Um estudo sobre as desigualdades socioeconômicas no acesso à Iniciação Científica FFLCH-USP (2010-2022)"
+  authors:
+    - family-names: "Mançano"
+      given-names: "Tales"
+      orcid: "https://orcid.org/0000-0001-5923-9743"
+    - family-names: "Alcantara"
+      given-names: "Victor"
+      orcid: "https://orcid.org/0000-0001-8846-9652"
