@@ -5,14 +5,14 @@ sobre as desigualdades socioeconômicas no acesso à Iniciação Científica
 FFLCH-USP (2010–2022)*, de **Tales Mançano** ([0000-0001-5923-9743](https://orcid.org/0000-0001-5923-9743))
 e **Victor Alcantara** ([0000-0001-8846-9652](https://orcid.org/0000-0001-8846-9652)).
 
-[![Replicação](https://github.com/mancano-tales/Quem-faz-IC/actions/workflows/replicacao.yml/badge.svg)](https://github.com/mancano-tales/Quem-faz-IC/actions/workflows/replicacao.yml)
+[![Replicação](https://github.com/mancano-tales/Quem-faz-IC-na-FFLCH/actions/workflows/replicacao.yml/badge.svg)](https://github.com/mancano-tales/Quem-faz-IC-na-FFLCH/actions/workflows/replicacao.yml)
 
-📄 **[O artigo, com todo o código](https://mancano-tales.github.io/Quem-faz-IC/paper.html)** —
+📄 **[O artigo, com todo o código](https://mancano-tales.github.io/Quem-faz-IC-na-FFLCH/paper.html)** —
 o texto integral com cada tabela e figura calculada na compilação, e o código
 de cada resultado à vista.
-📕 **[Working paper em PDF](https://mancano-tales.github.io/Quem-faz-IC/working-paper.pdf)** —
+📕 **[Working paper em PDF](https://mancano-tales.github.io/Quem-faz-IC-na-FFLCH/working-paper.pdf)** —
 o mesmo documento, sem código, para circulação.
-📊 **[Relatório de replicação](https://mancano-tales.github.io/Quem-faz-IC/)** —
+📊 **[Relatório de replicação](https://mancano-tales.github.io/Quem-faz-IC-na-FFLCH/)** —
 a conferência número a número contra a versão publicada.
 
 ---
@@ -84,8 +84,8 @@ reproduzir os números hoje. O `renv::restore()` é o que garante isso daqui a
 alguns anos, quando as versões dos pacotes tiverem mudado.
 
 ```bash
-git clone https://github.com/mancano-tales/Quem-faz-IC.git
-cd Quem-faz-IC
+git clone https://github.com/mancano-tales/Quem-faz-IC-na-FFLCH.git
+cd Quem-faz-IC-na-FFLCH
 Rscript run_all.R
 ```
 
@@ -351,7 +351,7 @@ parâmetros. O modelo reproduzido tem log-verossimilhança −5.252,814.
 > FFLCH-USP (2010–2022).
 
 Para o pacote de replicação, cite este repositório:
-`https://github.com/mancano-tales/Quem-faz-IC`.
+`https://github.com/mancano-tales/Quem-faz-IC-na-FFLCH`.
 
 ## Integração contínua
 
