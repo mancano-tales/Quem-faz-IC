@@ -1,0 +1,11 @@
+# MD5 dos arquivos de dados deste pacote de replicacao.
+# Confira com: Rscript tools/make-checksums.R --check
+d2dca3f8bae1c50cff59811ea03e9162 data-raw/auxiliar/dicionario-variaveis-sic-usp.xlsx
+67b4bd0f06608001cf4baa4c596a8f78 data-raw/auxiliar/evasao-2018-2.xlsx
+d1dff0807796c2f2602810a71421639a data-raw/auxiliar/sic-usp-239991-ciencias-sociais.xlsx
+67a7c96e613071348cac15b78036692b data-raw/auxiliar/sic-usp-239991-graduandos-fflch.xlsx
+900a1c9d198db4039bd6ef9fed2ab5bc data-raw/auxiliar/sic-usp-243681-ciencias-sociais-ingressantes.xlsx
+1e00037570ee451552bbaa99c9c0af11 data-raw/auxiliar/sic-usp-243681-ic-fflch.xlsx
+63e9865e5a997f0ad1ff6d75c2d33585 data-raw/sic-usp-243654-ingressantes.xlsx
+43db07bbfd6404fb8d5a6d54b51c5ec9 data-raw/sic-usp-243681-perfil-ic.xlsx
+cb80aab8f5dab965e6095a0d20763483 data/ic_usp.parquet

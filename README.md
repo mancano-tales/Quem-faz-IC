@@ -5,6 +5,8 @@ sobre as desigualdades socioeconômicas no acesso à Iniciação Científica
 FFLCH-USP (2010–2022)*, de **Tales Mançano** ([0000-0001-5923-9743](https://orcid.org/0000-0001-5923-9743))
 e **Victor Alcantara** ([0000-0001-8846-9652](https://orcid.org/0000-0001-8846-9652)).
 
+[![Replicação](https://github.com/mancano-tales/Quem-faz-IC/actions/workflows/replicacao.yml/badge.svg)](https://github.com/mancano-tales/Quem-faz-IC/actions/workflows/replicacao.yml)
+
 📄 **[O artigo, com todo o código](https://mancano-tales.github.io/Quem-faz-IC/paper.html)** —
 o texto integral com cada tabela e figura calculada na compilação, e o código
 de cada resultado à vista.
@@ -134,6 +136,7 @@ que ninguém lê.
 │   └── 03-supplementary-usp.R recortes da USP e de Ciências Sociais
 │
 ├── outputs/{tables,figures}   resultados gerados
+├── tools/                     geradores do codebook e dos checksums
 └── inst/legacy/               scripts exploratórios originais dos autores
 ```
 
@@ -158,6 +161,13 @@ Tecnologia da Informação.
 | `sic-usp-243654-ingressantes.xlsx` | Cod. #243654 | JupiterWeb (Pró-Reitoria de Graduação) | 298.704 ingressantes na USP, com o questionário socioeconômico da FUVEST |
 | `sic-usp-243681-perfil-ic.xlsx` | Cod. #243681 | Atena (Pró-Reitoria de Pesquisa) | 29.544 projetos de IC de 22.301 estudantes |
 
+**Integridade.** `data-raw/CHECKSUMS.txt` registra o MD5 de cada arquivo de
+dados. Para conferir que nada foi corrompido ou trocado:
+
+```bash
+Rscript tools/make-checksums.R --check
+```
+
 **Privacidade.** A USP entregou os dados já anonimizados: o `Identificador` é
 um inteiro sequencial, sem nome, número USP, CPF ou data de nascimento. A
 única variável de idade é a idade no ano da prova do vestibular. É por isso
@@ -171,6 +181,10 @@ contribuinte, 19,05%; INCLUSP, nenhuma resposta). A `analysis/02` reproduz essa
 tabela de completude.
 
 ### O painel
+
+O **[CODEBOOK.md](CODEBOOK.md)** documenta as 54 variáveis — descrição, tipo,
+taxa de preenchimento e categorias. É gerado por `tools/make-codebook.R` a
+partir do próprio painel, e o CI falha se ficar dessincronizado.
 
 `data/ic_usp.parquet` tem uma linha por ingressante (298.704 × 54). Combina:
 
@@ -339,10 +353,26 @@ parâmetros. O modelo reproduzido tem log-verossimilhança −5.252,814.
 Para o pacote de replicação, cite este repositório:
 `https://github.com/mancano-tales/Quem-faz-IC`.
 
+## Integração contínua
+
+O workflow [`replicacao.yml`](.github/workflows/replicacao.yml) roda o pacote
+inteiro num ambiente limpo a cada push e uma vez por mês: restaura as versões
+do `renv.lock`, confere os checksums dos dados, executa `run_all.R`, verifica
+que o codebook está sincronizado e renderiza os três documentos.
+
+Não há checagem externa duplicando o que o pipeline já faz — as asseverações
+dentro dos scripts derrubam a execução se um número se afastar do publicado, e
+o job falha junto. A rodada mensal existe porque um pacote de replicação
+apodrece em silêncio: é ela que avisa quando uma dependência quebra, antes que
+um leitor descubra.
+
 ## Licença
 
-O código é distribuído sob a **GNU General Public License v2** (ver `LICENSE`).
+O **código** é distribuído sob a **GNU General Public License v2**
+(ver `LICENSE`).
 
-Os microdados em `data-raw/` são informação pública obtida via Lei de Acesso à
-Informação e permanecem públicos; ao reutilizá-los, cite o SIC-USP e os códigos
-dos pedidos (#243654 e #243681).
+Os **dados** em `data-raw/` são informação pública obtida via Lei de Acesso à
+Informação (Lei nº 12.527/2011) e permanecem públicos. Ao reutilizá-los, cite o
+SIC-USP e os códigos dos pedidos (#243654 e #243681) — a atribuição é a mesma
+que a **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt-br)**
+pede, e é sob esses termos que os disponibilizamos.
