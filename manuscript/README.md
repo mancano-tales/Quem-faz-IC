@@ -48,26 +48,49 @@ uma linha nesse arquivo.
 
 | Data | Tipo | Palavras | Arquivo |
 |---|---|---|---|
+| 2024-01-29 | apresentação | 10.703 | Apresentação no CPqI |
+| 2024-04-10 | **versão do artigo** | **11.634** | Seminário S-OSET |
+| 2024-07-25 | **versão do artigo** | **11.599** | Marcada como VELHO pelo autor |
 | 2024-08-01 | material de campo | 392 | TCLE — entrevistas Anpocs |
 | 2024-08-06 | material de campo | 861 | Roteiro de entrevista |
+| 2024-11-25 | **versão do artigo** | **11.744** | Última versão S-OSET |
 | 2024-12-02 | material de campo | 445 | TCLE — métodos |
 | 2025-05-28 | outro artigo | 596 | Revisão sistemática sobre evasão |
 | 2025-05-30 | folha de rosto | 658 | Folha de rosto PUC-RS |
 | 2025-08-06 | plano de revisão | 696 | Plano de revisão |
-| **2025-08-13** | **versão do artigo** | **6.323** | Escrita de Tales, antes da passagem de Victor |
-| **2025-08-15** | **versão do artigo** | **6.384** | vr1 |
+| 2025-08-13 | **versão do artigo** | **6.323** | Escrita de Tales, antes da passagem de Victor |
+| 2025-08-15 | **versão do artigo** | **6.384** | vr1 |
 | 2025-08-15 | gráficos e tabelas | 1.276 | Gráficos e tabelas |
-| **2025-08-21** | **versão do artigo** | **5.758** | Revisão de Victor |
-| **2025-09-10** | **versão do artigo** | **7.028** | Pós-revisão editorial da revista |
+| 2025-08-21 | **versão do artigo** | **5.758** | Revisão de Victor |
+| 2025-09-10 | **versão do artigo** | **7.028** | Pós-revisão editorial da revista |
 
 O registro em `versoes.csv` é a fonte; esta tabela é um resumo.
 
-A trajetória de tamanho conta parte da história. O texto sai de Tales com 6.323
-palavras, cresce pouco na `vr1`, e então Victor corta cerca de 600 palavras na
-revisão de agosto — sobretudo do resumo e da introdução, condensando passagens
-que explicavam a hipótese inicial. A editoração da revista devolve 1.270
-palavras, o que é esperado: é nela que entram as tabelas por extenso, as notas
-de rodapé sobre os modos de ingresso e as expansões pedidas pelo parecer.
+A trajetória de tamanho conta parte da história. O texto nasce como seminário de
+orientação, o S-OSET do programa de Sociologia Econômica e do Trabalho, sob
+orientação de Marta Arretche, e nesse formato tem cerca de 11.700 palavras ao
+longo de 2024, com uma carta de abertura aos leitores do seminário. Entre
+novembro de 2024 e agosto de 2025 ele perde quase metade do corpo, chegando à
+submissão da PUC-RS com 6.323 palavras. Victor corta mais 600 na revisão de
+agosto, sobretudo do resumo e da introdução, e a editoração da revista devolve
+1.270, o que é esperado, já que é nela que entram as tabelas por extenso e as
+notas de rodapé pedidas pelo parecer.
+
+O corte de 2025 não foi uniforme. Duas seções inteiras da versão de seminário
+desapareceram: "O lugar da IC no campo acadêmico-científico brasileiro", que
+trazia os dados de Massi e Queiroz sobre a distribuição das bolsas no país, e
+"A Iniciação Científica na FFLCH-USP", construída sobre o relatório do PET de
+Ciências Sociais. As duas foram condensadas numa única seção contextual.
+
+Vale registrar uma perda específica, porque ela voltou a importar. A versão do
+seminário discutia diferenças entre áreas do conhecimento, apoiada em Canaan e
+Nogueira: nas humanidades o capital cultural aparecia positivamente
+correlacionado à chance de conseguir bolsa, e essa relação se invertia nas
+demais áreas, com a hipótese de que a carreira acadêmica não seria ali a via
+mais prestigiosa de profissionalização. Nenhuma frase dessa passagem sobreviveu
+à versão submetida. A pergunta pela heterogeneidade entre áreas, que organiza o
+artigo seguinte sobre a USP inteira, já estava formulada em 2024, com hipótese
+teórica anexada, e saiu do texto por limite de espaço.
 
 Os documentos que não são versões do artigo estão aqui de propósito. O roteiro
 de entrevista e os termos de consentimento pertencem a uma etapa qualitativa do
