@@ -64,9 +64,22 @@ fizeram IC passou de 9,1% na coorte de 2010 para 15,3% na de 2018.
 
 ## Como replicar
 
-**Requisitos**: R 4.4 ou superior. Os pacotes (`tidyverse`, `arrow`, `readxl`,
-`writexl`, `stargazer`, `here`, `scales`) são instalados automaticamente na
-primeira execução. Para gerar o relatório, também [Quarto](https://quarto.org).
+**Requisitos**: R 4.4 ou superior. Os pacotes (`dplyr`, `tidyr`, `arrow`,
+`readxl`, `writexl`, `ggplot2`, `scales`, `stargazer`, `here`) são instalados
+automaticamente na primeira execução. Para gerar os documentos, também
+[Quarto](https://quarto.org).
+
+Para reproduzir com **as versões exatas** com que os resultados foram gerados,
+o `renv.lock` registra as 66 dependências e o R 4.6.0:
+
+```r
+renv::restore()
+```
+
+O `renv` não é ativado automaticamente: sem esse passo os scripts rodam contra
+a biblioteca do seu R, o que é conveniente para uso casual e suficiente para
+reproduzir os números hoje. O `renv::restore()` é o que garante isso daqui a
+alguns anos, quando as versões dos pacotes tiverem mudado.
 
 ```bash
 git clone https://github.com/mancano-tales/Quem-faz-IC.git
@@ -91,6 +104,13 @@ opção `echo = knitr::is_html_output()` no bloco de setup.
 
 Os scripts também rodam isoladamente, na ordem numérica. Cada um lê o que
 precisa do disco e não depende de objetos deixados na memória pelo anterior.
+
+O pipeline **falha em vez de avisar**. O `01-build-data.R` interrompe a execução
+se o painel não sair com 298.704 linhas, 54 colunas e 21.902 estudantes com IC;
+o `02-article-fflch.R` interrompe se a Tabela 1, a Tabela 2 ou o modelo se
+afastarem dos números publicados. Uma alteração que mude um resultado derruba
+`run_all.R` com código de saída diferente de zero, em vez de imprimir um aviso
+que ninguém lê.
 
 ---
 

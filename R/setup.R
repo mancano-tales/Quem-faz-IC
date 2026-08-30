@@ -6,7 +6,7 @@
 # ------------------------------------------------------------------------------
 
 # Pacotes necessarios. Instala o que estiver faltando.
-.pkgs <- c("here", "dplyr", "tidyr", "readr", "readxl", "writexl",
+.pkgs <- c("here", "dplyr", "tidyr", "readxl", "writexl",
            "ggplot2", "scales", "arrow", "stargazer")
 
 .faltando <- .pkgs[!vapply(.pkgs, requireNamespace, logical(1), quietly = TRUE)]

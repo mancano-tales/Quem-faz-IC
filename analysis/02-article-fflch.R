@@ -236,3 +236,46 @@ message(sprintf(
   coef(reg4)[["ano"]], coef(reg4)[["racaPPI"]]
 ))
 message("    (publicado: N = 16.974 | AIC = 10537.63 | ano = -0.058 | racaPPI = -0.138)")
+
+# Asseveracoes contra a versao publicada --------------------------------------
+# Estas nao sao mensagens: se um numero mudar, o script para aqui. E o que
+# impede que uma alteracao no pipeline se afaste do artigo sem que ninguem note.
+
+perto <- function(x, alvo, tol) abs(x - alvo) < tol
+
+stopifnot(
+  # Tabela 1 -- coortes 2010-2018 (identica ao publicado nas 9 coortes)
+  "Tabela 1: N da coorte de 2010 deve ser 1.732" =
+    tabela1$n[tabela1$ano == 2010] == 1732,
+  "Tabela 1: 157 estudantes da coorte de 2010 fizeram IC" =
+    tabela1$fez_ic[tabela1$ano == 2010] == 157,
+  "Tabela 1: N da coorte de 2018 deve ser 1.704" =
+    tabela1$n[tabela1$ano == 2018] == 1704,
+  "Tabela 1: 261 estudantes da coorte de 2018 fizeram IC" =
+    tabela1$fez_ic[tabela1$ano == 2018] == 261,
+
+  # Tabela 2 -- taxas de resposta do QASE (identica nas 13 questoes)
+  "Tabela 2: o Item 16 do QASE tem 98,55% de respostas" =
+    perto(tabela2$pct_respostas[tabela2$questao == questoes_qase[["em"]]],
+          0.9855, 0.00005),
+  "Tabela 2: a renda familiar tem 98,42% de respostas" =
+    perto(tabela2$pct_respostas[tabela2$questao == questoes_qase[["rfm"]]],
+          0.9842, 0.00005),
+  "Tabela 2: a ocupacao do contribuinte tem 19,05% de respostas" =
+    perto(tabela2$pct_respostas[tabela2$questao == questoes_qase[["ocup_resp1"]]],
+          0.1905, 0.00005),
+
+  # Tabela 4 -- modelo logistico
+  "Tabela 4: a amostra do modelo deve ter 16.974 observacoes" =
+    nobs(reg4) == 16974,
+  "Tabela 4: o AIC do modelo deve ser 10537,63" =
+    perto(AIC(reg4), 10537.63, 0.01),
+  "Tabela 4: o coeficiente de `ano` deve ser -0,058" =
+    perto(coef(reg4)[["ano"]], -0.058, 0.0005),
+  "Tabela 4: o coeficiente de `raca` (PPI) deve ser -0,138" =
+    perto(coef(reg4)[["racaPPI"]], -0.138, 0.0005),
+  "Tabela 4: o modelo tem 16 parametros" =
+    length(coef(reg4)) == 16
+)
+
+message("\nOK: as tabelas 1, 2 e 4 reproduzem os numeros publicados.")

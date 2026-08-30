@@ -121,7 +121,16 @@ stopifnot(
   "o identificador deve ser unico" =
     !anyDuplicated(ic_usp$id),
   "IC deve ser binaria onde qtd_ic esta preenchida" =
-    all(ic_usp$IC %in% c(0, 1) | is.na(ic_usp$IC))
+    all(ic_usp$IC %in% c(0, 1) | is.na(ic_usp$IC)),
+
+  # O painel distribuido com o artigo tem estas dimensoes exatas. Se a leitura
+  # dos brutos ou uma das regras de agregacao mudar, o script para aqui.
+  "o painel deve ter 298.704 linhas e 54 colunas" =
+    identical(dim(ic_usp), c(298704L, 54L)),
+  "21.902 estudantes fizeram ao menos uma IC" =
+    sum(ic_usp$IC == 1, na.rm = TRUE) == 21902,
+  "22.300 estudantes constam na base do Atena" =
+    sum(!is.na(ic_usp$qtd_ic)) == 22300
 )
 
 message(sprintf(
