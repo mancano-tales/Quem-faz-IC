@@ -76,7 +76,7 @@ pct <- function(x, acc = 0.01) scales::percent(x, accuracy = acc, decimal.mark =
 Este documento é gerado por código. Todas as tabelas e figuras abaixo são
 calculadas na compilação, a partir dos microdados em `data-raw/`. A versão HTML
 mostra o código de cada resultado; o PDF apresenta apenas o texto. O pacote de
-replicação está em <https://github.com/mancano-tales/Quem-faz-IC>.
+replicação está em <https://github.com/mancano-tales/Quem-faz-IC-na-FFLCH>.
 :::
 
 # Introdução
