@@ -1,0 +1,459 @@
+Seção: Dossiê, Resenha ou Artigo Livre
+ID – 48117
+Quem faz Iniciação Científica?
+Um estudo sobre as desigualdades socioeconômicas no acesso à Iniciação Científica FFLCH-USP (2010-2022).
+Who Participates in Undergraduate Research?
+A Study on Socioeconomic Inequalities in Access to Undergraduate Research Opportunities at FFLCH-USP (2010–2022).
+Tales Mançano[1]
+Orcid: https://orcid.org/0000-0001-5923-9743.
+E-mail: mancano.tales@gmail.com
+Victor Alcantara[2]
+Orcid: https://orcid.org/0000-0001-8846-9652.
+E-mail: victorgalcantara@usp.br
+Recebido em: data
+Aprovado em: data
+Publicado em:
+Resumo: O artigo investiga as desigualdades socioeconômicas no acesso à Iniciação Científica (IC) na Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo (FFLCH-USP) das coortes que ingressaram entre 2010 e 2018, acompanhadas até 2022.
+Para tanto, são mobilizados dados administrativos da universidade com informações socioeconômicas de dez coortes de ingressantes, bem como o registro na base de estudantes vinculados à bolsa de iniciação científica.
+Fizemos uma análise descritiva desses dados e a aplicação de um modelo de regressão logística tomando a realização da IC como variável a ser explicada.
+Entre os resultados principais, observamos que as características adscritas tradicionalmente mais associadas às desigualdades educacionais, tais como renda e escolaridade dos pais, possuem baixo poder explicativo das chances de fazer IC.
+Outras variáveis associadas ao vínculo com o trabalho e ao tipo de sustento durante a formação são mais explicativas.
+O estudo sugere que, embora as desigualdades de características adscritas no acesso ao ensino superior persistam, a necessidade de trabalhar torna-se o mecanismo dominante que restringe o acesso a oportunidades acadêmicas no interior da educação superior, como a iniciação científica.
+Palavras-chave: Iniciação Científica, Educação Superior, Brasil, Desigualdades Educacionais.
+Abstract: The article investigates socioeconomic inequalities in access to undergraduate research programs (Iniciação Científica, IC) at the School of Philosophy, Languages and Human Sciences of the University of São Paulo (FFLCH-USP), focusing on cohorts that entered between 2010 and 2018 and were followed until 2022.
+To this end, we use administrative data from the university containing socioeconomic information on ten cohorts of incoming students, as well as records of those registered in the database of students linked to IC scholarships.
+We conducted a descriptive analysis of these data and applied a logistic regression model, taking participation in IC as the dependent variable.
+Among the main results, we observe that ascribed characteristics traditionally associated with educational inequalities, such as parental income and education, have limited explanatory power for the likelihood of engaging in IC.
+Other variables related to employment status and sources of financial support during higher education prove more relevant.
+The study suggests that, although inequalities based on ascribed characteristics in access to higher education persist, the necessity of working becomes the dominant mechanism restricting access to academic opportunities within higher education, such as undergraduate research.
+Keywords: undergraduate research; higher education; educational inequalities; Brazil.
+Introdução
+O artigo busca discutir como a Iniciação Científica (IC), uma oportunidade acadêmica opcional cobiçada pelo seu prestígio acadêmico e possibilidade de remuneração (Canaan, 2012; Canaan; Nogueira, 2015), reproduz as desigualdades observadas no acesso, afetando as oportunidades de indivíduos menos privilegiados ao longo do curso.
+Lançamos a pergunta clássica dos estudos da Desigualdade de Oportunidades Educacionais (DOE): qual é a associação entre origem social e o acesso a um recurso escasso no contexto acadêmico da Educação Superior?
+A relação entre origem social e destino educacional é um objeto extensamente analisado pela literatura interessada na estratificação e na mobilidade social (Ribeiro; Carvalhaes, 2020).
+No Brasil, pesquisadores têm evidenciado a distribuição desigual das oportunidades educacionais segundo a origem social dos indivíduos (Brito, 2017; Knop; Collares, 2019; Ribeiro, 2009; Salata, 2018; Senkevics et al., 2024; Senkevics; Carvalhaes; Ribeiro, 2022).
+Ainda que o acesso ao sistema tenha sido ampliado a grupos menos privilegiados, persistem os efeitos da origem social nas dimensões vertical e horizontal, com o efeito de marcadores sociais como raça, gênero, renda, educação e ocupação dos pais (Carvalhaes; Ribeiro, 2019).
+Em diálogo com esta literatura, este artigo propõe a discussão da Iniciação Científica como um recurso após o acesso, academicamente seletivo e valorizado no contexto acadêmico da Educação Superior (ES).
+Para tanto, utilizamos dados administrativos da Universidade de São Paulo (USP) e do questionário socioeconômico aplicado aos estudantes no vestibular para a construção de um painel de ingressantes nesta instituição entre 2010-2018, acompanhados até 2022.
+Com o painel, analisamos a distribuição do acesso à IC entre as coortes de ingressantes na maior faculdade da USP, a Faculdade de Filosofia, Ciências e Letras (FFLCH).
+Com os dados das coortes, aplicamos métodos de análise de regressão logística para analisar o efeito de marcadores sociais em acessar ou não a política de IC.
+Nossos resultados indicam que, dentre as características adscritas que marcam a origem social dos estudantes, os fatores tradicionais como renda e escolaridade dos pais têm peso menor na probabilidade de os indivíduos acessarem IC.
+Esse resultado é coerente com os achados da sociologia da estratificação social, de que efeitos de origem são mais fortes nas transições educacionais mais iniciais do que nas mais avançadas (Breen; Jonsson, 2005).
+Ou seja, a influência nas chances de sucesso em uma transição educacional diminui à medida que o indivíduo avança nos níveis de ensino.
+Ao invés da origem social per se, tal como tradicionalmente medida pela literatura, a principal barreira que prediz as menores chances de realizar IC são a idade, a necessidade de trabalhar durante a graduação e o turno noturno.
+A explicação para este resultado seria que o acesso à IC estaria condicionado a estudantes com a disponibilidade de tempo e disponibilidade, como será discutido adiante.
+Além disso, uma vez que os principais filtros seletivos onde as desigualdades educacionais operam já teriam sido superados pelos indivíduos, tendo estes alcançados um nível de desempenho acadêmico elevado e, com resultados semelhantes aos seus pares privilegiados no acesso a recursos escassos disponíveis dentro da universidade, grande parte das barreiras impostas pela desigualdade de origem já teriam operado nas transições anteriores.
+Passados os diversos filtros até o ingresso na educação superior, outro mecanismo com consequências para as desigualdades de oportunidades na educação superior passa a ser predominante: a necessidade de trabalhar em concomitância à realização do curso de educação superior.
+A emergência de tal mecanismo, no entanto, não nega as desigualdades anteriores, na medida em que estudantes de origem socioeconômica menos privilegiada são mais vulneráveis a ter de exercer atividade remunerada durante sua graduação.
+Os dados aqui apresentados indicam que a necessidade de trabalhar, mesmo quando controlada pelas características adscritas mencionadas, tem mais peso para explicar a desigualdade no acesso a IC.
+Verificamos que indivíduos de origem social desfavorecida que possuem condições de se dedicar ao estudo, tendem a ter sucesso em acessar a IC.
+Isso se reflete, por exemplo, na maior proporção de estudantes de menor renda familiar per capta acessando bolsas de iniciação científica, indicando que tais estudantes poderiam ter maior ímpeto e/ou condições de disputar tais oportunidades educacionais dado que eles conseguiram ingressar na educação superior pública.
+O impacto do trabalho não foi uma variável inicialmente prevista entre as mais centrais nas chances de acesso a essa oportunidade educacional.
+Nossa hipótese inicial era que fatores como renda, gênero, escolarização dos pais e raça estariam mais negativamente associados à realização de IC.
+No entanto, proxies para a necessidade de trabalhar durante a graduação estão presentes no questionário socioeconômico aplicado aos estudantes, encontramos que são as variáveis de maior poder explicativo.
+Outras variáveis têm papéis contra-intuitivos nas chances de realizar IC, indo na contramão dos resultados geralmente encontrados na literatura.
+Quanto maior a renda, por exemplo, menores são as chances de fazer IC, ser homem também contribui negativamente e a raça tem um papel explicativo restrito, confluindo para o argumento de que a principal restrição para as chances de fazer IC é necessidade de trabalhar.
+Como colocam Comin e Barbosa (2011), muitos dos ingressantes na educação superior brasileira, com a expansão do sistema, passou a ter uma composição mais diversa que o perfil tradicional de estudantes de alto nível socioeconômico transicionando diretamente do ensino médio para a educação superior.
+Também não são somente estudantes jovens.
+São também trabalhadores: "não são, a rigor, estudantes que trabalham, mas trabalhadores que estudam" (Comin; Barbosa, 2011, p. 75).
+Na composição do corpo discente da FFLCH, verifica-se para o período analisado, que cerca de 42% dos estudantes que ingressaram na faculdade trabalhavam regularmente enquanto aplicavam para o vestibular, e 32% afirmaram pretender se manter por conta própria durante a graduação com recursos oriundos de seu trabalho remunerado.
+Parte desse perfil de trabalhadores-estudantes, no entanto, são pessoas de maior idade, já diplomados na educação superior, que já trabalham e se sustentam, têm maior renda, e estudam no período noturno.
+Este público pode não ter maiores ambições e condições de se dedicar à IC e não são, necessariamente, de origem menos privilegiada.
+A FFLCH-USP em meio à política de IC na educação superior brasileira
+A IC é uma parte formativa de prática científica voltada à pesquisa ou ao desenvolvimento tecnológico.
+Fazer IC consiste em “desenvolver um projeto de pesquisa elaborado e realizado sob orientação de um docente da universidade, executado com ou sem bolsa para os alunos” (Massi, Queiroz, 2015, p. 7).
+Canaan (2012) relata que a política de IC surge em 1951, com a fundação do atual Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), e passou a ser promovida para as instituições através do Programa Institucional de Bolsas de Iniciação Científica (PIBIC), após a CF/88.
+Segundo a autora, a intenção era fomentar a vivência da pesquisa, possibilitando aos alunos de graduação desenvolver um maior domínio do conjunto de disposições necessárias à atividade científica, como o conhecimento dos códigos e das linguagens acadêmicas (expressão oral e escrita), assim como seu uso apropriado (por exemplo, a escolha pertinente de leituras e de atividades a serem realizadas) (Canaan, 2012; Canaan; Nogueira, 2015).
+Assim, o acesso à IC constitui-se como um recurso de distinção para a trajetória dos estudantes na educação superior, especialmente valorizado no meio acadêmico e trajetórias profissionais ligadas à pesquisa.
+O CNPq oferece por 12 meses bolsas aos estudantes selecionados.
+A seleção e avaliação são feitas de forma descentralizada pelas respectivas Instituições de Educação Superior (IES), que recebem cotas das bolsas conforme o edital lançado anualmente pelo CNPq.
+O PIBIC surge com o objetivo declarado de — entre outros — institucionalizar e disseminar as pesquisas nas IES ao estimular a formação de pesquisadores já durante a graduação, despertando a “vocação científica e incentivando talentos potenciais” (ibid., p. 95).
+A agência entendia que dessa forma estaria contribuindo para familiarização dos estudantes com as técnicas e métodos científicos, e que essa formação não se limitaria à experiência da iniciação científica, mas serviria de estímulo para que estudantes qualificados ingressassem na pós-graduação.
+Com a formação pregressa, o CNPq visava também reduzir o tempo de formação dos pós-graduandos (Canaan & Nogueira, 2015).
+Desenvolver uma IC é, assim, uma atividade prestigiada, especialmente para a carreira acadêmica.
+Entre 2008 e 2009, 229 instituições foram contempladas com 19.684 bolsas de PIBIC (Massi & Queiroz, 2015).
+Dessas a USP teria recebido 1.254 bolsas, 6,4% do total, valor superior a toda a região Norte do Brasil.
+Os nossos dados mostram que a FFLCH é contemplada com em torno de 9% das bolsas PIBIC da USP, além de bolsas de outras fontes, número que varia a cada ano.
+Tabela 1 — Proporção de estudantes que realizaram IC por coorte (2010-2018)
+         2010     2011     2012     2013     2014      2015      2016      2017      2018
+  ------ -------- -------- -------- -------- --------- --------- --------- --------- ---------
+  N      1.732    1.759    1.694    1.746    1.736     1.691     1.706     1.692     1.704
+  I.C.   157      147      154      142      198       220       238       233       261
+  (%)    (9,1%)   (8,4%)   (9,1%)   (8,1%)   (11,4%)   (13,0%)   (14,0%)   (13,8%)   (15,3%)
+Fonte: Elaboração própria a partir de dados do SIC-USP Cod.#239991 e Cod.#24368
+A política esteve em expansão durante o período analisado, não apenas com financiamento do CNPq, mas também com recursos oriundos do orçamento da própria faculdade, e programas de bolsas financiados pela reitoria da USP, FAPESP, entre outros.
+Dessa forma, durante o período, a proporção de estudantes que realizou IC por coorte de ingresso aumentou substancialmente como vemos na Tabela 1, passando de cerca de 8 ou 9% no início do período para mais de 13% e até 15% dos estudantes realizando IC por coorte a partir de 2015.
+Dados e Métodos
+Nesta pesquisa cruzamos dados administrativos, censitários e longitudinais da instituição estudada com um questionário socioeconômico aplicado durante o exame de ingresso e matrícula.
+Neste caso, utilizamos as respostas do questionário socioeconômico oriundos do Questionário de Avaliação Socioeconômica (QASE) da FUVEST, o vestibular da USP.
+Tal questionário foi respondido por 98,55% dos estudantes que ingressaram na FFLCH no período analisado.
+Muitos questionários, no entanto, estão incompletos, com algumas das questões tendo taxas de resposta significativamente mais baixas, como mostra a Tabela 2.
+Tabela 2 - Proporção de respostas para cada questão do QASE
+  -------------------------------------------------------------------------------------------
+  Questão do QASE                                                            % de respostas
+  -------------------------------------------------------------------------- ----------------
+  Qual é o seu estado civil?                                                 71,39%
+  Onde você cursou o ensino fundamental/1º Grau?                             90,77%
+  Onde você cursou/cursa o ensino médio/2º Grau?                             98,55%
+  Que tipo de ensino médio você concluiu/concluirá?                          98,55%
+  Renda familiar mensal                                                      98,42%
+  Quantas pessoas contribuem para a obtenção dessa renda familiar?           96,96%
+  Quantas pessoas vivem da renda?                                            98,55%
+  Você exerce alguma atividade remunerada?                                   89,59%
+  Instrução do pai ou responsável 1 e variações                              97,68%
+  Instrução da mãe ou responsável 2 e variações                              97,82%
+  Ocupação/Situação Ocupacional do principal contribuinte da família?[3]     19,05%
+  Como pretende se manter durante seus estudos universitários?               84,24%
+  Você está participando do processo INCLUSP? (Para os anos aplicáveis)[4]   0,00%
+  -------------------------------------------------------------------------------------------
+Fonte: Elaboração própria a partir de dados do SIC-USP Cod.#239991 e Cod.#24368
+Os dados sobre a graduação e a iniciação científica foram produzidas para fins administrativos através dos sistemas da USP, especificamente o JupiterWeb, sistema da Pró-reitoria de Graduação (PRG), e Atena, sistema administrativo da Pró-Reitoria de Pesquisa da USP (PRP) responsável por administrar as pesquisas de IC e de Pós-doutorado da universidade.
+Tais registros administrativos foram cruzados com os dados socioeconômicos, permitindo associar perfil socioeconômico com a realização ou não de IC e a evasão ou não da universidade.
+Os bancos de dados foram disponibilizados via SIC-USP (Serviço de Informação ao Cidadão) Cod.#239991 e Cod.#243681 — que responde às solicitações por informações regulamentadas pela Lei da Acesso à Informação (LAI), Lei nº 12.527, de 18 de novembro de 2011.
+Esses dados foram tratados pelo Escritório de Gestão de Indicadores de Desempenho Acadêmico (EGIDA), ligado à reitoria da USP, a partir do acesso disponibilizado pela Superintendência de Tecnologia da Informação (STI) que administra os bancos de dados institucionais da universidade.
+A base de dados providenciada pelo EGIDA contém as informações socioeconômicas de todos os estudantes da USP entre 2002 e 2022 e a relação de todos os projetos de IC desenvolvidos por estudantes da USP em qualquer unidade entre 2010 e 2022.
+Realizamos, nessa pesquisa, um recorte apenas dos estudantes da FFLCH durante uma fração do período em que os dados socioeconômicos e os dados de IC coincidem.
+Na base de dados consta um identificador anonimizado da pessoa, o Curso, o Ano e o Período de ingresso, a Classificação na Carreira, o Modo de ingresso[5] e se utilizou reserva de vagas, a situação atual no bacharelado (concluído, cursando, desligado ou outro) a situação da licenciatura com as mesmas informações, e quando aplicável o ano de conclusão ou desligamento do bacharelado e da licenciatura.
+Em relação às informações socioeconômicas temos: sexo, em variável binaria F para Feminino ou M para masculino na qual estão classificados todos os estudantes[6], o número de reingressos quando aplicável, idade ao ingressar na USP e as questões do QASE elaborado pela FUVEST.
+Em relação aos projetos de iniciação Científica, temos as variáveis 1.
+Situação do projeto, 2.
+Tipo de fomento, 3.
+Data de início e fim de cada projeto, 4.
+Unidade e departamento do orientador do projeto.
+Como está por projeto, conseguimos verificar os detalhes de cada um dos projetos de um mesmo aluno quando este fez várias ICs.
+A primeira variável informa se o projeto está ativo, encerrado, se foi aprovado, reprovado ou transferido.
+Até 2015 todos os projetos foram considerados encerrados.
+A partir de 2016 os projetos puderam ser classificados como aprovados, reprovados, cancelados ou transferidos.
+Na tabela 3, temos a descrição da modalidade e financiador das bolsas de iniciação científica:
+Tabela 3 - Número de casos para cada tipo de fomento à IC
+  --------------------------------------------------------------------------
+  Tipo de Fomento                       Número de Casos    Porcentagem (%)
+  ------------------------------------- ------------------ -----------------
+  IC Sem Fomento                        835                28,03%
+  Bolsas Programas Reitoria (USP)       768                25,78%
+  PIBIC (CNPq)                          700                23,50%
+  Bolsas FFLCH                          403                13,53%
+  Sem Informação sobre Fomento          105                3,52%
+  FAPESP                                82                 2,75%
+  CNPq Cota Pesquisador                 42                 1,41%
+  Convênios                             15                 0,50%
+  Santander                             13                 0,44%
+  PIBITI                                10                 0,34%
+  PIBIC-AF                              3                  0,10%
+  Fundações (FUSP ou outras)            3                  0,10%
+  Total                                 2979               100,00%
+  --------------------------------------------------------------------------
+Fonte: Análise dos autores a partir de dados do SIC-USP Cod.#239991 e Cod.#24368
+É importante destacar que apenas as Bolsas PIBIC e PIBITI são administradas exclusivamente pelo sistema Atena e até 2015 só eram registradas no sistema as bolsas de PIBIC, PIBITI, Institucional (Reitoria USP) e Santander, sendo as outras categorias registradas somente a partir de 2016.
+Vale destacar que a disponibilidade de bolsas de Iniciação Científica também cresceu muito no período estudado.
+Se na coorte de 2010 8,78% dos estudantes fizeram IC, na coorte de 2018 essa proporção foi para 14,91%, um crescimento de quase 70% (ver Tabela 4).
+Limitações dos dados analisados
+Uma limitação importante na fonte de dados utilizados nesta pesquisa é a ausência do indicador de desempenho dos estudantes dentre as variáveis analisadas.
+Dentre os critérios para a distribuição de bolsas PIBIC na FFLCH estão a classificação do Orientador em uma tabela de avaliação do CNPq[7], o desempenho do aluno, operacionalizado pela média ponderada com reprovações, e a qualidade do projeto, sendo avaliado apenas com 0 para reprovado e 10 para aprovado[8].
+Tendo em vista tais critérios de seleção, seria relevante ter esse indicador incorporado no modelo para compreender seu impacto nas chances de acessar a IC.
+Na ausência desse indicador, adotamos a classificação na carreira no vestibular como um proxy.
+Esse, no entanto, é uma proxy limitada — especialmente por tornar aqueles que ingressaram por vias diferentes incomparáveis, já que pelas regras de ações afirmativas, os estudantes de ampla concorrência e cotistas disputam em classificações apartadas.
+A média normalizada das estudantes que evitaria também distorções de comparações entre estudantes de turmas e cursos com médias de notas muito diferentes.
+Também há uma limitação importante de dados de bolsistas de outras agências de fomento que não o CNPq, que não tem a obrigação de se cadastrar no sistema Atena.
+Este é frequentemente o caso de bolsistas do Programa Unificado de Bolsas da USP (PUB) e da Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP).
+O PUB e a FAPESP financiam uma quantidade bastante considerável de projetos em que concedem bolsas para graduandos.
+Destes, parte relevante é de iniciação científica.
+O PUB é um programa financiado com recursos da reitoria da USP e que, durante o período analisado, contemplou 605 projetos PUB de pesquisa da FFLCH, concedendo 976 bolsas.
+Não necessariamente estas bolsas foram para alunos da FFLCH, da mesma forma que alunos da FFLCH podem ter sido contemplados com bolsas PUB de docentes de outras unidades (faculdades e institutos) da USP.
+No sistema Atena, foram cadastradas 99 ICs com bolsa PUB, apenas 10% do que consta de bolsas PUB-Pesquisa concedidas pela Unidade.
+As bolsas do Programa eram destinadas exclusivamente aos estudantes inscritos no módulo socioeconômico do Programa de Apoio à Permanência e Formação Estudantil (PAPFE) da USP.
+Entretanto, a vulnerabilidade socioeconômica nunca foi um critério restritivo para concessão da bolsa na medida em que o docente responsável pela bolsa poderia escolher livremente o bolsista.
+No entanto, por ser desenhado no interior do programa de permanência o programa concede bolsas para um público de menor nível socioeconômico e a uma proporção maior de estudantes PPI em relação ao PIBIC.
+O Programa também abria a possibilidade de acumular bolsas com estágio, e exigia apenas um relatório final, em oposição aos relatórios semestrais do PIBIC.
+Tal arquitetura institucional incentivaria — a título de hipótese — estudantes socioeconomicamente vulneráveis a privilegiar realizar as atividades acadêmicas a partir de projetos financiados pelo PUB em relação ao PIBIC.
+O que poderia levar a um viés de seleção do perfil dos estudantes na amostra aqui estudada.
+A partir de maio de 2021 a bolsa PUB passou a ser superior em valor às bolsas oferecidas pelo PIBIC em R$100, além de manter exigências menos rigorosas, podendo ter ampliado ainda mais o viés em níveis difíceis de ponderar sem os dados específicos do Programa.
+Temos registrados apenas 99 casos de bolsistas PUB na Base de dados, e, portanto, podemos incorrer em vieses por falta desses dados.
+Os dados disponíveis mostram que 41,41% dos bolsistas PUB estão no quartil de menor renda, enquanto apenas 26,48% dos bolsistas PIBIC estão no menor quartil de renda, o que corrobora a hipótese aventada de existir uma sobre-representação dos estudantes mais vulneráveis socioeconomicamente no PUB em relação a outros programas.
+Em relação à FAPESP, em pesquisa na Biblioteca Virtual da FAPESP encontramos 560 ICs cuja instituição principal (do orientador) é a FFLCH entre 2010 e 2022.
+Esse número não corresponde exatamente ao número de ICs FAPESP realizados por estudantes da FFLCH já que os orientadores da FFLCH podem ter orientandos de outras unidades da USP ou IES e os estudantes da FFLCH podem ter orientadores de outras unidades ou IES.
+No entanto, se tomarmos esse número como uma aproximação relativamente adequada, teríamos que cerca de 15% das ICs FAPESP foram cadastradas no Atena.
+As bolsas da FAPESP são muito mais exigentes em termos de demandas dos estudantes, no entanto, remuneram melhor os bolsistas.
+Não achamos grandes disparidades em relação à renda per capita dos 81 bolsistas FAPESP que constam na base de dados em relação à média dos bolsistas.
+Resultados
+Construímos um modelo logístico para estimar as chances de realizar Iniciação Científica (IC) em função de variáveis como período do curso, sexo, raça, renda familiar per capita, escolaridade dos pais, idade ao ingressar, vínculo com trabalho ao ingressar e tipo de sustento pretendido durante a formação.
+Utilizamos uma regressão logística binária, cujos resultados estão apresentados na Figura A, expressos em termos de razão de chances (OR) e probabilidade média marginal.
+A interpretação segue a seguinte lógica: quando a probabilidade média marginal é positiva (ou OR > 1), o impacto sobre a variável dependente é positivo; quando é negativa (ou OR < 1), o impacto é negativo; quando está próxima de zero (ou OR ≈ 1), não há efeito estatisticamente significativo.
+Os resultados mostram que apenas período do curso, o vínculo com trabalho e a forma de sustento possuem associação relevante com a realização de IC.
+Entre as variáveis de origem social, apenas raça (PPI) apresenta efeito relevante: estudantes brancos têm, em média, 0,13 ponto percentual a mais de probabilidade de realizar IC (OR = 1,138, p < 0,01).
+O sexo, a escolaridade dos pais e a renda familiar per capita não apresentaram efeitos substantivos.
+A análise das probabilidades médias marginais indica que ser do turno noturno tem impacto negativo sobre a realização de IC, já que estudantes dos turnos diurnos têm probabilidade 0,27 ponto percentual maior (OR = 1,313, p < 0,01) de realizar IC em comparação aos do noturno.
+Estar trabalhando em tempo integral no momento do vestibular também reduz a probabilidade, pois esses estudantes têm 0,25 ponto percentual a menos (OR = 0,779, p < 0,01) de realizar IC.
+No mesmo sentido, a pretensão de se sustentar por conta própria durante a formação reduz em 0,30 ponto percentual a probabilidade de realizar IC (OR = 0,740, p < 0,01) quando comparada àqueles que dependem exclusivamente do suporte familiar.
+Tabela 4 — Resultados do modelo de regressão logística
++-------------------------------------------------------------------------------------------------+
+| Variável dependente: realização de IC                                                           |
++-------------------------------------------+-----------------+-----------------+-----------------+
+|                                           | Valor Z         | Razão de chance | Probabilidades  |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Ano                                       | -0.058***       | 0.943***        | -0.057***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.008)         | (0.008)         | (0.008)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Idade                                     | -0.060***       | 0.942***        | -0.058***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.007)         | (0.007)         | (0.007)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Sexo: Masculino                           | -0.014          | 0.987***        | -0.013          |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.053)         | (0.053)         | (0.053)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Raça: PPI                                 | -0.138**        | 0.871***        | -0.129**        |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.066)         | (0.066)         | (0.066)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Educ.
+Resp. : Médio completo              | 0.045           | 1.046***        | 0.046           |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.074)         | (0.074)         | (0.074)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Educ.
+Resp. : Superior completo           | 0.068           | 1.070***        | 0.070           |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.076)         | (0.076)         | (0.076)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| SM per capta                              | -0.052***       | 0.950***        | -0.050***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.014)         | (0.014)         | (0.014)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Trabalho: Sim, em tempo integral          | -0.291***       | 0.747***        | -0.253**        |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.105)         | (0.105)         | (0.105)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Trabalho: Sim, em tempo parcial           | 0.028           | 1.028***        | 0.028           |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.068)         | (0.068)         | (0.068)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Sustento: Por conta própria               | -0.362***       | 0.697***        | -0.303***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.096)         | (0.096)         | (0.096)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Sustento: Com bolsa e apoio da família    | 0.227***        | 1.255***        | 0.255***        |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.070)         | (0.070)         | (0.070)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Sustento: Com trabalho e apoio da família | -0.326***       | 0.722***        | -0.278***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.091)         | (0.091)         | (0.091)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Sustento: Outros                          | 0.158           | 1.171***        | 0.171           |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.225)         | (0.225)         | (0.225)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Período: Noturno                          | -0.314***       | 0.731***        | -0.269***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.057)         | (0.057)         | (0.057)         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Classificação na carreira                 | -0.001***       | 0.999***        | -0.001***       |
+|                                           +-----------------+-----------------+-----------------+
+|                                           | (0.0001)        | (0.0001)        | (0.0001)        |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Constante                                 | 56.693^(***)    | 73.533^(***)    | 78.543^(***)    |
++-------------------------------------------+-----------------+-----------------+-----------------+
+|                                           | -14.088         | -15.693         | -14.453         |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Obs.                                      | 16,974                                              |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Pseudo R²                                 |                 | 0.054           |                 |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| AIC                                       |                 | 10537.63        |                 |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| BIC                                       |                 | 10661.46        |                 |
++-------------------------------------------+-----------------+-----------------+-----------------+
+| Log Likelihood                            | -5,295.635                                          |
++-------------------------------------------+-----------------------------------------------------+
+| Akaike Inf.
+Crit.                         | 10,617.270                                          |
++-------------------------------------------+-----------------------------------------------------+
+| Note: *p**p***p<0.01                      |                                                     |
++===========================================+=================+=================+=================+
+Fonte: Análise dos autores a partir de dados do SIC-USP Cod.#239991 e Cod.#24368
+Adicionalmente, apresentamos dois gráficos que ilustram as probabilidades preditas de realizar iniciação científica a depender do tipo de vínculo de trabalho no momento do vestibular e das respostas dadas pelos estudantes à pergunta sobre como pretendiam se manter financeiramente durante a graduação.
+As curvas de densidade permitem observar a concentração das probabilidades para cada categoria, evidenciando diferenças marcantes no perfil dos grupos.
+Todas as distribuições de probabilidade estão concentradas em patamares baixos, devido à baixa frequência do evento realizar IC.
+Figura 1 — Densidade das probabilidades preditas conforme o vínculo com o trabalho
+[]
+Figura 2 — Densidade das probabilidades preditas conforme o tipo de pretensão de sustento na universidade
+[]
+Entre as formas de sustento, observa-se que estudantes que declararam manter-se na universidade exclusivamente com recursos próprios, provenientes do próprio trabalho, concentram-se entre aqueles com menores probabilidades preditas de realizar iniciação científica.
+Por outro lado, aqueles que afirmaram contar com bolsa de estudos ou com bolsa aliada a trabalho e apoio familiar concentram-se entre os estudantes com maiores probabilidades preditas de participação.
+Essa distribuição evidencia que o suporte financeiro externo, seja ele familiar ou institucional, atua como um facilitador para o engajamento em atividades acadêmicas extracurriculares como a iniciação científica.
+Uma vez que o estudante ingressa pretendendo se manter com a bolsa e apoio familiar, tende a buscar oportunidades como a IC.
+Nossa interpretação é que parte dos estudantes de origem menos privilegiadas que conseguem acessar à FFLCH estão tendo condições de efetivamente disputar e alcançar as oportunidades educacionais disponíveis neste meio.
+Estudantes de menor renda que podem abrir mão de exercer atividades profissionais fora na universidade, geralmente os mais jovens, tem conseguido acessar a iniciação científica.
+Abrir mão do trabalho para se dedicar à iniciação científica pode estar fazendo sentido para os estudantes mais jovens de origem menos privilegiada, que podem acumular as bolsas de IC com bolsas de permanência estudantil da universidade e contar com algum apoio da família, permitindo para parte desses jovens a dedicação de mais tempo à universidade e o acesso à suas oportunidades.
+Tais possibilidades, no entanto, são menos acessíveis para estudantes mais velhos, com maior pressão para contribuir com a renda familiar, que estudam no período noturno e possuem menos tempo para se dedicar a universidade, o que é necessário para realizar uma iniciação científica.
+Apesar disso, não estamos afirmando que as desigualdades tradicionalmente encontradas estão deixando de operar, mas que o mecanismo predominante passa a ser outro, relacionado à necessidade de trabalhar fora da universidade e a possibilidade de se dedicar à universidade e suas bolsas acadêmicas.
+Nas tabelas 5 e 6, temos a proporção de estudantes que realizam IC por faixa de idade e por exercer ou não atividade remunerada.
+Tabela 5 — Proporção de estudantes que fazem IC por faixa etária
+  Fez IC por idade   Não fez IC   Fez IC   %
+  ------------------ ------------ -------- --------
+  18 anos ou menos   83,76%       16,24%   16,27%
+  19 anos            86,87%       13,13%   19,55%
+  20 e 21 anos       88,63%       11,37%   18,93%
+Tabela 6 — Proporção de estudantes que fazem IC em relação a realizar atividade remunerada
+  Atividade remunerada?
+Não fez IC   Fez IC   %
+  ----------------------- ------------ -------- --------
+  Não                     87,75%       12,25%   55,06%
+  Eventualmente           90,54%       9,46%    11,15%
+  Em tempo parcial        92,81%       7,19%    21,07%
+  Em tempo integral       96,02%       3,98%    12,71%
+Verificamos nas tabelas 5 e 6 que os estudantes com que possuem 18 anos ou menos ao ingressar na USP (lembrando que esta é uma pergunta respondida quando da primeira matrícula dos estudantes) fazem IC em uma proporção 4.4 vezes maior do que os estudantes que ingressaram na graduação com 25 anos ou mais.
+Por sua vez, os estudantes que não exercem nenhuma atividade remunerada fazem IC em proporção cerca de 3 vezes maior que os estudantes que exercem atividade remunerada em tempo integral (40 horas semanais) quando estão ingressando na USP.
+Essas duas variáveis também são fortemente relacionadas..
+Por outro lado, 71,67% dos estudantes que trabalham em tempo integral, 45,45% dos estudantes que trabalham em tempo parcial e 43,94% dos estudantes que trabalham eventualmente tem 25 anos ou mais — população que representa cerca de 32% da população da FFLCH.
+Tabela 7 — Cruzamento entre atividade remunerada (trabalho) e idade ao ingressar
+  Faixa etária       Não      Eventualmente   Em tempo parcial   Em tempo integral   Total
+  ------------------ -------- --------------- ------------------ ------------------- --------
+  18 anos ou menos   25,45%   8,47%           8,06%              1,98%               16,40%
+  19 anos            28,42%   12,89%          11,94%             3,96%               19,44%
+  20 e 21 anos       23,44%   16,54%          16,92%             8,70%               18,74%
+  22 a 24 anos       11,52%   18,16%          17,63%             13,69%              13,50%
+  25 anos ou mais    11,16%   43,94%          45,45%             71,67%              31,93%
+  Total              55,06%   11,15%          21,07%             12,71%              19902
+A informação presente na tabela 7, no entanto, nos informa somente sobre aqueles que trabalhavam quando ingressaram na faculdade, e isso se altera ao decorrer do curso.
+No entanto, não temos dados que possam nos indicar novos empregos formais dos estudantes.
+Trabalhar também está relacionado com o turno em que os estudantes se matriculam, já que a maior parte das atividades remuneradas são incompatíveis com os turnos diurnos dos cursos.
+Ao cruzar a idade de ingresso na faculdade e o turno escolhido para o ingresso, vemos que os estudantes mais velhos têm uma preferência considerável pelos turnos noturnos, enquanto os estudantes com 18 anos ou menos — recém-egressos do ensino médio — se concentram 75% nos turnos diurnos (matutino — no caso do curso de Letras da FFLCH — e o vespertino — para todos os outros cursos da FFLCH).
+Segundo para os dados do questionário sobre a pretenção de manutenção durante a graduação, preenchida pelos estudantes quando da realização do vestibular, vemos que, dentre os estudantes que assinalaram que se manteriam com bolsas de estudos, que é apenas 5% dos ingressantes, 17,9% deles realizaram IC.
+Enquanto aqueles que disseram que iriam se manter com recursos do próprio trabalho, que soma 28,6% dos ingressantes no período, apenas 5,2% fizeram IC, conforme descrito na tabela 8.
+Tabela 8 — Cruzamento entre pretensão de manutenção da faculdade e realização de IC
+  --------------------------------------------------------------------------------------------------------------------------------
+  Forma de manutanção                                                       Proporção de respondentes   Proporção que fizeram IC
+  ------------------------------------------------------------------------- --------------------------- --------------------------
+  Com bolsa de estudos                                                      5,26%                       17,89%
+  Com bolsa, trabalhando e contando, ainda, com o apoio da família          9,10%                       17,06%
+  Trabalhando, mas contando, para o essencial, com os recursos da família   16,70%                      14,62%
+  Somente com recursos dos pais                                             9,37%                       14,31%
+  Não respondeu                                                             18,29%                      10,47%
+  Outros                                                                    1,26%                       10,28%
+  Trabalhando para participar do rateio das despesas da família             11,42%                      9,54%
+  Por conta própria, com recursos oriundos de trabalho remunerado           28,60%                      5,23%
+  Número total de pessoas                                                   17189                       1911
+  --------------------------------------------------------------------------------------------------------------------------------
+Como indicava a regressão logística, a resposta dos estudantes a esse questionário parece ter um potencial preditivo importante para as chances de realizar IC, indo no sentido do argumento de que a perspectiva de trabalhar ou não ao ingressar na faculdade é parte importante da explicação.
+Apesar de estarmos argumentando que os marcadores tradicionais explicam menos que o trabalho, e os resultados das regressões realizadas corroboram tais conclusões, quando olhamos as proporções de estudantes que fazem IC por grupo racial por ano, verificamos uma mudança das proporções de realização de IC por grupo racial que chama a atenção.
+Se entre a coorte de 2009 e a de 2015 os estudantes PPI da FFLCH (não cotistas) faziam IC em maior proporção que os não PPI, isso muda a partir de 2016, quando estudantes PPI cotistas passam a ingressar.
+Vale destacar que durante todo o período (2009-2015) a proporção de estudantes PPI na faculdade foi de cerca de 20% para cerca de 35%.
+Para a coorte de 2018, a distância nas proporções de realização de IC entre os grupos é a maior da série, com 17,3% dos estudantes não PPI tendo realizado IC e 12,9% dos PPI.
+Assim, as cotas podem ter contribuído para mudar o perfil dos estudantes PPI de modo a transformar as relações entre raça e realização de IC.
+Tabela 9 — Proporção de estudantes que fizeram IC por categoria racial na FFLCH por ano
+                   2009    2010    2011    2012    2013    2014     2015     2016     2017     2018
+  ---------------- ------- ------- ------- ------- ------- -------- -------- -------- -------- --------
+  Não PPI          9.91%   9.49%   8.05%   8.85%   8.20%   11.16%   12.63%   14.83%   15.39%   17.38%
+  PPI              9.87%   7.86%   9.65%   9.63%   9.06%   13.08%   13.64%   13.54%   11.17%   12.87%
+  % PPI na FFLCH   19.9%   16.9%   18.4%   19.9%   17.4%   21.9%    22.7%    23.0%    30.7%    35.3%
+Considerações finais
+Propomos, neste texto, que os principais marcadores de desigualdade que a literatura clássica sobre estratificação educacional sugere perdem força após o ingresso em uma instituição de ensino superior seletiva como a FFLCH-USP`, conforme os recorrentes achados da sociologia da estratificação também encontram (Breen; Jonsson, 2005).
+Argumentamos que, no interior do curso dessa instituição seletiva de ensino, novos mecanismos entram em cena.
+No caso estudado, o mecanismo de reprodução de desigualdades no acesso a oportunidades acadêmicas dentro do curso passa a ser diferente: a necessidade de trabalhar.
+Embora esse mecanismo não necessariamente negue o anterior, na medida em que uma condição socioeconômica de origem pode aumentar aumenta as necessidades de trabalhar durante a graduação, nosso modelo de regressão indica que os efeitos líquidos do trabalho têm maior poder explicativo do que as variáveis tradicionais de origem socioeconômica.
+Nossos achados sugerem que, dentre os estudantes mais jovens, que não trabalham, e estão entrando na educação superior logo após o ensino médio, as chances de realização de iniciação científica não são tão impactadas pela origem, como pela raça, tipo de escola de origem no ensino médio e a renda familiar (que tem um efeito negativo nas chances, ou seja, quanto maior a renda menor as chances).
+A grande distinção é pelo turno de estudo (noturno tem menos chances), trabalho, idade (mais velhos tem menos chance).
+Se para o ingresso na educação superior, as origens sociais operam duplamente, seja via desempenho acadêmico, seja nas capacidades dos estudantes de arcar com os cursos de uma universidade privada e se manter na educação superior (Senkevics, Barbosa, Carvalhaes, Ribeiro. 2024), após a educação superior, embora as desigualdades persistam, elas parecem ser menos intensas, na medida em que um grande filtro já foi aplicado à população discente, selecionando aqueles de alto desempenho academico.
+Passado o grande filtro do vestibular, o desempenho e os fatores socioeconômicos prévios perdem força em favor do trabalho, e estudantes menos privilegiados com condições de se dedicar às oportunidades acadêmicas podem ter sucesso em realizar IC.
+Em síntese, as desigualdades de origem social passam a ser moduladas pela necessidade de trabalhar.
+Os dados revelam que, de forma contraintuitiva, a maior renda familiar não está necessariamente associada a maiores chances de realizar IC.
+Pelo contrário, estudantes com menores rendas parecem ter um maior ímpeto em buscar e conquistar bolsas de IC, possivelmente devido à sua importância como forma de apoio financeiro durante os estudos.
+Já aqueles que trabalham, passam a ter maior renda, contribuindo para o resultado de correlação negativa entre renda e realização de IC.
+A implicação de trabalhar sobre a redução das chances de aproveitamento na graduação destaca a relevância de aproximar o debate sobre a transição escola-trabalho (Comin & Barbosa, 2011) para pensar o fenômeno na medida em que proporção cada vez maior dos estudantes que passam a acessar a educação superior são trabalhadores.
+Referências
+BREEN, R.; JONSSON, J.
+O.
+Inequality of Opportunity in Comparative Perspective — Recent Research on Educational Attainment and Social Mobility.
+Annual Review of Sociology, [s. l.], v. 31, p. 223–243, 2005.
+BRITO, M.
+M.
+A. de.
+Novas tendências ou velhas persistências?
+Modernização e expansão educacional no Brasil.
+Cadernos de Pesquisa, [s. l.], v. 47, n. 163, p. 224–263, 2017.
+CANAAN, M.
+G.
+Quem se torna bolsista de iniciação científica na UFMG?
+Uma análise de fatores que influenciam no acesso à bolsa. 2012.
+Dissertação de Mestrado em Educação - Universidade Federal de Minas Gerais, Belo Horizonte, 2012.
+CANAAN, M.
+G.; NOGUEIRA, M.
+A.
+Bens em disputa no campo universitário: o efeito de fatores socioeconômicos e culturais no acesso à bolsa de iniciação científica.
+In: MASSI, L.; QUEIROZ, S.
+L. (org.).
+Iniciação científica: aspectos históricos, organizacionais e formativos da atividade no ensino superior brasileiro.
+São Paulo: UNESP, 2015. p. 61–89.
+Disponível em: https://books.scielo.org/id/s3ny4/pdf/massi-9788568334577-04.pdf.
+CARVALHAES, F.; RIBEIRO, C.
+A.
+C.
+Estratificação horizontal da educação superior no Brasil: desigualdades de classe, gênero e raça em um contexto de expansão educacional.
+Tempo Social, [s. l.], v. 31, n. 1, p. 195–233, 2019.
+COMIN, A.
+A.; BARBOSA, R.
+Trabalhar para estudar: sobre a pertinência da noção de transição escola-trabalho no Brasil.
+Novos Estudos - CEBRAP, [s. l.], v. 91, p. 75–95, 2011.
+KNOP, M.; COLLARES, A.
+C.
+M.
+A influência da origem social na probabilidade de concluir os diferentes cursos de ensino superior.
+Sociedade e Estado, [s. l.], v. 34, n. 2, p. 351–380, 2019.
+MASSI, L.; LINHARES QUEIROZ, S.
+Iniciação científica: aspectos históricos, organizacionais e formativos da atividade no ensino superior brasileiro. [S. l.]: Editora UNESP, 2015.
+Disponível em: http://books.scielo.org/id/s3ny4.
+Acesso em: 6 ago. 2024.
+RIBEIRO, C.
+A.
+C.
+Desigualdade de Oportunidades Educacionais no Brasil: Raça, Classe e Gênero.
+In: DESIGUALDADE DE OPORTUNIDADES NO BRASIL. 1a eded.
+Belo Horizonte: Argvmentvm, 2009. (Trabalho & desigualdade). p. 21–73.
+RIBEIRO, C.
+A.
+C.; CARVALHAES, F.
+Estratificação e mobilidade social no Brasil: uma revisão da literatura na sociologia de 2000 a 2018. [s. l.], p. 1–46, 2020.
+SALATA, A.
+Ensino Superior no Brasil das últimas décadas: redução nas desigualdades de acesso?.
+Tempo Social, [s. l.], v. 30, n. 2, p. 219–253, 2018.
+SENKEVICS, A. et al.
+Decomposing Heterogeneity in Inequality of Educational Opportunities: Family Income and Academic Performance in Brazilian Higher Education.
+Sociological Science, [s. l.], v. 11, p. 854–885, 2024.
+SENKEVICS, A.
+S.; CARVALHAES, F.; RIBEIRO, C.
+A.
+C.
+Mérito ou berço?
+Origem social e desempenho no acesso ao ensino superior.
+Cadernos de Pesquisa, [s. l.], v. 52, p. e09528, 2022.
+Autor/a Nome
+Tales Mançano é graduado em Ciências Sociais e mestrando em Ciência Política.
+Autor/a Nome
+Victor Alcantara é licenciado em Ciências Sociais, mestre em Sociologia e doutorando em Sociologia
+Endereço para correspondência
+Tales Mançano
+Endereço de Contato: mancano.tales@gmail.com
+[1] Departamento de Ciência Política.
+Universidade de São Paulo, São Paulo, SP, Brasil.
+[2] Departamento de Sociologia.
+Universidade de São Paulo, São Paulo, SP, Brasil.
+[3] Estas perguntas foram formuladas diferentemente ao longo dos anos, apresentamos aqui perguntas similares agregadamente.
+[4] O INCLUSP foi um programa de ação afirmativa da USP que acrescia bonificação na nota do vestibular que funcionou até 2019.
+No entanto, não foram disponibilizados dados sobre quais alunos participaram alegando serem inexistentes nos sistemas da USP
+[5] Existem muitas formas de ingresso na USP, muitas delas bastante específicas e pouco significativas em termos do número de estudantes que ingressam por elas, não entraremos no mérito de como ocorre cada forma de ingresso.
+O processo seletivo FUVEST representou a maior parcela de ingresso, com 83,63% do total de casos (18582 estudantes).
+O SiSU foi responsável por 14,02% dos ingressantes, com um total de 3115 pessoas.
+A Transferência Externa contribuiu com 1,21% dos ingressos, totalizando 268 estudantes.
+Já a Transferência USP teve uma participação de 1,00%, com 223 casos.
+A admissão por meio do Convênio PEC-G representou 0,04% dos ingressos, com 9 estudantes, o ingresso por meio de Liminar também teve uma contribuição de 0,04%, com 8 casos.
+A categoria Graduado contribuiu com 0,03% dos ingressantes, totalizando 7 estudantes.
+A admissão por Cortesia Diplomática foi de 0,02%, com 4 casos.
+Por sua vez, a Transferência 'Ex officio' teve uma participação de 0,01%, com 3 estudantes.
+Por fim, a admissão por meio de Convênio de Duplo Diploma representou apenas 1 caso.
+O total é 22220 estudantes
+[6] Essa é uma limitação do sistema, que ainda não tem admitido outras identificações fora da categorização binária nem permite a mudança dessa informação
+[7] Isso implica que parte bastante relevante das chances dos estudantes conseguiram a bolsa de IC não se relaciona com o seu desempenho acadêmico pessoal, mas principalmente com a classificação do orientador selecionado
+[8] Essas informações foram verificadas pela participação do autor na Comissão de Pesquisa da FFLCH, da qual o autor foi representante discente entre 2021 e 2023.

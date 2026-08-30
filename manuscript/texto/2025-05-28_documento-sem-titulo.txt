@@ -1,0 +1,42 @@
+Seção: Desigualdade Educacional em Debate: Reflexões e Perspectivas
+Revisão sistemática dos estudos sobre fatores associados à evasão na educação superior no Brasil
+Systematic Review of Studies on Factors Associated with Dropout in Brazilian Higher Education
+Revisión Sistemática de Estudios sobre Factores Asociados a la Deserción en la Educación Superior Brasileña
+Tales Mançano[1]
+Orcid.org/0000-0001-5923-9743
+mancano.tales@gmail.com
+Geovanio Alves Monteiro[2]
+https://orcid.org/0009-0005-8991-3352
+geovaniomonteiro@usp.br
+Erico Augusto do Carmo[3]
+erico.carmo@usp.br
+Recebido em: 28 maio. 2025.
+Aprovado em: xx xxx. xxxx.
+Resumo: Este artigo realiza uma revisão sistemática dos estudos estatísticos sobre fatores associados à evasão na educação superior no Brasil, com o objetivo de identificar quais variáveis são incorporadas nos estudos existentes.
+Foram analisados artigos nacionais publicados entre 2010 e 2024, utilizando o Portal de Busca Integrada da USP com os descritores "evasão" e "superior".
+A partir de 312 artigos únicos identificados, 16 foram selecionados para análise com base nos critérios de inclusão: uso de dados censitários, acompanhamento longitudinal, e aplicação de estatística multivariada.
+Observou-se uma ampla diversidade nos estudos do campo, porém poucos tratam de investigar fatores associados à evasão.
+Entre estes, as técnicas de análise de sobrevivência e regressões logísticas são os dois modelos estatísticos mobilizados.
+Os resultados indicam uma diversidade de variáveis, muitas vezes constrangidos pela disponibilidade dos dados administrativos, que são, via de regra, a fonte mobilizada.
+Palavras-chaves: Evasão, Educação Superior, Brasil, Desigualdades Educacionais
+Abstract: This article conducts a systematic review of statistical studies on factors associated with dropout in higher education in Brazil, aiming to identify which variables are incorporated into existing research.
+We analyzed national articles published between 2010 and 2024, using the USP Integrated Search Portal with the keywords "evasão" (dropout) and "superior" (higher education).
+From 312 unique articles identified, 16 were selected for analysis based on our inclusion criteria: use of census data, longitudinal follow-up, and application of multivariate statistics.
+While a wide diversity was observed in the field's studies, few actually investigate factors associated with dropout.
+Among these, survival analysis techniques and logistic regressions are the two main statistical models employed.
+The results indicate a variety of variables, often constrained by the availability of administrative data, which is typically the source utilized.
+Keywords: Dropout, Higher Education, Brazil, Educational Inequalities
+Resumen: Este artículo realiza una revisión sistemática de los estudios estadísticos sobre factores asociados a la deserción en la educación superior en Brasil, con el objetivo de identificar qué variables se incorporan en los estudios existentes.
+Se analizaron artículos nacionales publicados entre 2010 y 2024, utilizando el Portal de Búsqueda Integrada de la USP con los descriptores "evasión" (deserción) y "superior" (educación superior).
+De 312 artículos únicos identificados, se seleccionaron 16 para el análisis basándose en los criterios de inclusión: uso de datos censales, seguimiento longitudinal y aplicación de estadística multivariada.
+Se observó una amplia diversidad en los estudios del campo, aunque pocos investigan factores asociados a la deserción.
+Entre estos, las técnicas de análisis de supervivencia y las regresiones logísticas son los dos modelos estadísticos movilizados.
+Los resultados indican una diversidad de variables, a menudo limitadas por la disponibilidad de datos administrativos, que son, por regla general, la fuente utilizada.
+Palabras clave: Deserción, Educación Superior, Brasil, Desigualdades Educativas
+Endereço para correspondência:
+Autor 1: Av Professor Luciano Gualberto, 315 - Sala 2047 Cidade Universitária - São Paulo - SP CEP 05508-900
+Autor 2: Av Professor Luciano Gualberto, 315 - Sala 2047 Cidade Universitária - São Paulo - SP CEP 05508-900
+Autor 3: Av Professor Luciano Gualberto, 315 - Sala 2047 Cidade Universitária - São Paulo - SP CEP 05508-900
+[1] Universidade de São Paulo.
+[2] Universidade de São Paulo.
+[3] Universidade de São Paulo.

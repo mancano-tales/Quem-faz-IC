@@ -1,0 +1,41 @@
+Augusto Neftali Corte de Oliveira via Portal de Periódicos <pucrs-pen-bounces@emnuvens.com.br>
+Anexos
+ter., 15 de jul., 11:24
+para mim, Victor
+Tales Mançano, Victor Gabriel Alcantara:
+Nós chegamos a uma decisão referente a sua submissão para o periódico Conversas & Controvérsias, "Quem faz Iniciação Científica? : Um estudo sobre as desigualdades socioeconômicas no acesso à Iniciação Científica FFLCH-USP (2010-2022)".
+Nossa decisão é de: Revisões Requeridas.
+Por favor, consulte os pareceres abaixo e submeta uma versão corrigida do manuscrito neste mesmo processo.
+Por favor, verifique, em especial, as instruções de correções formais realizadas pelos avaliadores em relação aos títulos e outros aspectos de redação.
+Ficaremos felizes em contar com a nova versão do artigo, que será analisada pela equipe editorial e organizadores do dossiê.
+Por favor, se possível, observe o prazo de 15 dias (31/07/2025).
+------------------------------------------------------
+Avaliador A:
+~~Caro(a) Autor(a) e Editor(a), após a leitura completa do manuscrito “Quem faz Iniciação Científica?
+Um estudo sobre as desigualdades socioeconômicas no acesso à Iniciação Científica FFLCH‑USP (2010‑2022)”, entendo que o tema apresenta relevância significativa ao explorar desigualdades dentro do ambiente universitário, especialmente ao destacar a “necessidade de trabalhar” como fator explicativo do engajamento em iniciação científica.~~
+Na introdução recomendo aprimorar a formulação dos objetivos e das perguntas de pesquisa para evitar repetições em parágrafos consecutivos (p.2).
+A partir da p.2, ainda no terceiro parágrafo, os (as) autores (as) já exploram os resultados, sem introduzir totalmente o tema ou aprofundar no problema e objetivos que esperam alcançar.
+Estes resultados são repetidos em um capítulo específico.
+Recomendo reorganizar essa estrutura para que os resultados sejam discutidos no espaço adequado do trabalho.
+Observei discrepâncias na nomenclatura das tabelas , por exemplo o texto menciona “Tabela Z” (p.5), "Tabela K" (p.12), "Tabela L" (p.13), "Tabela M" (p.13) enquanto o documento suplementar apresenta “Tabela A” a “Tabela H” é necessário uniformizar e fazer referência corretamente às tabelas.
+Prefira usar "Como visto na tabela A" do que "Como visto na tabela acima", etc.
+Metodologicamente, o uso de regressão logística é adequado, inclusive com painel de coortes, mas é preciso ter cuidado pois as técnicas de painel que visam reduzir viés não foram aplicadas, sendo apenas uma regressão logística binária.
+Também carece de justificativa clara para a escolha do período 2010‑2020, uma vez que algumas análises referem‑se a 2009‑2018 (tabelas A e H), e seria oportuno incluir outras métricas de ajuste do modelo, apenas o pseudo‑R² não é suficiente.
+Como é mencionado no texto (p.10) outros modelos foram testados, portanto, seria pertinente uma comparação entre AIC, BIC, razão de verossimilhança, ou um teste de GoF (Hosmer–Lemeshow) para justificar a escolha do modelo apresentado.
+EU ACHO QUE ESSA É A PARTE DO PARECER MAIS SUBSTANTIVA QUE PODEMOS NOS DEDICAR MAIS A RESOLVER.
+Notei que algumas tabelas repetem títulos ou não explicam o significado das colunas percentuais.
+As tabelas B e C tem o mesmo título (Proporção de respostas para cada questão do QASE), e nas tabelas D e E a coluna "%"sem indicação clara da frequência ou proporção que representa.
+Por fim, recomendo renumerar e padronizar títulos (por exemplo, “IC” versus “Iniciação Científica”), além revisar termos e ortografia (“terciária”, “acadêmico”, etc.).
+Há erros de digitação distribuídos por todo o texto.
+Recomendação: Correções obrigatórias
+------------------------------------------------------
+------------------------------------------------------
+Avaliador B:
+~~O texto aborda uma temática interessante e baseia-se em dados administrativos e socioeconômicos de estudantes, permitindo uma análise quantitativa sólida e fundamentada nas evidências, o que aumenta a credibilidade dos resultados.
+Além disso, os resultados desse estudo podem orientar ações institucionais voltadas a reduzir desigualdades, ao evidenciar que condições socioeconômicas e de trabalho são fatores determinantes na participação em IC.~~
+Quanto à metodologia, gostaria de destacar que a falta de dados sobre o desempenho dos estudantes impede uma análise mais completa, já que esse fator pode influenciar o acesso à IC, especialmente considerando critérios de seleção de bolsas que envolvem as notas dos estudante na universidade.
+O desempenho no vestibular não me parece ser uma escolha adequada para a análise que pretende o estudo.
+Além disso, o artigo apresenta uma série de problemas linguístico relacionados à construção de períodos, concordância verbal e nominal e regência.
+Para publicação, é fundamental que o trabalho passe por uma revisão linguística criteriosa.
+Recomendação: Correções obrigatórias
+------------------------------------------------------

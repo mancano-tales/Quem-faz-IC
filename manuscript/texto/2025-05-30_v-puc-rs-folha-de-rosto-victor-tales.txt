@@ -1,0 +1,38 @@
+Seção: Desigualdade Educacional em Debate: Reflexões e Perspectivas
+Quem faz Iniciação Científica?
+Um estudo sobre as desigualdades socioeconômicas no acesso à Iniciação Científica FFLCH-USP (2010-2022)
+Who Pursues Scientific Initiation?
+A Study on Socioeconomic Inequalities in Access to Scientific Initiation at FFLCH-USP (2010-2022)
+¿Quién hace Iniciación Científica?
+Un estudio sobre las desigualdades socioeconómicas en el acceso a la Iniciación Científica FFLCH-USP (2010-2022)
+Tales Mançano[1]
+Orcid.org/0000-0001-5923-9743
+mancano.tales@gmail.com
+Victor Gabriel Alcantara[2]
+https://orcid.org/0000-0001-8846-9652
+victorgalcantara@usp.br
+Recebido em: 30 maio. 2025.
+Aprovado em: xx xxx. xxxx.
+Resumo: Este artigo investiga as desigualdades socioeconômicas no acesso à Iniciação Científica (IC) na FFLCH-USP entre 2010 e 2022.
+Analisando dados administrativos e socioeconômicos de coortes de 2010-2020 via regressão logística, os autores constataram que marcadores tradicionais como renda, escolaridade dos pais, gênero e raça tinham menor poder explicativo do que a necessidade de trabalhar e outros fatores relacionados, como idade e turno de estudo.
+Este achado é coerente com os tradicionais argumentos da sociologia da estratificação que verificou que quanto mais avançada o nível educacional, menos os efeitos da origem na desigualdade educacional (Breen and Jonsson 2005).
+Dessa forma, encontramos que enquanto estudantes mais velhos, do período noturno e os que trabalhavam em tempo integral apresentaram menor participação em IC, raça, o tipo de escola no ensino médio e sexo não tem efeitos significativos.
+O estudo sugere que, embora as barreiras iniciais de acesso ao ensino superior persistam, a necessidade de trabalhar torna-se o mecanismo dominante que modula o acesso a oportunidades acadêmicas como a IC.
+Palavras-chaves: Iniciação Científica, Educação Superior, Brasil, Desigualdades Educacionais
+Abstract: This article investigates socioeconomic inequalities in access to Scientific Initiation (SI) at FFLCH-USP between 2010 and 2022.
+Analyzing administrative and socioeconomic data from 2010-2020 cohorts via logistic regression, the authors found that traditional markers like income, parental education, gender, and race had less explanatory power than the need to work and other related factors, such as age and study shift.
+This finding is consistent with traditional arguments in the sociology of stratification, which observe that the more advanced the educational level, the lesser the effects of origin on educational inequality (Breen and Jonsson 2005).
+Thus, we found that while older students, those in evening shifts, and those working full-time showed lower participation in SI, race, type of high school, and sex had no significant effects.
+The study suggests that, although initial barriers to higher education access persist, the need to work becomes the dominant mechanism modulating access to academic opportunities like SI.
+Keywords: Scientific Initiation, Higher Education, Brazil, Educational Inequalities
+Resumen: Este artículo investiga las desigualdades socioeconómicas en el acceso a la Iniciación Científica (IC) en la FFLCH-USP entre 2010 y 2022.
+Analizando datos administrativos y socioeconómicos de cohortes de 2010-2020 mediante regresión logística, los autores constataron que marcadores tradicionales como ingresos, escolaridad de los padres, género y raza tenían menor poder explicativo que la necesidad de trabajar y otros factores relacionados, como la edad y el turno de estudio.
+Este hallazgo es coherente con los argumentos tradicionales de la sociología de la estratificación, que verificó que cuanto más avanzado es el nivel educativo, menores son los efectos del origen en la desigualdad educativa (Breen y Jonsson 2005).
+De esta forma, encontramos que, si bien los estudiantes mayores, del turno nocturno y los que trabajaban a tiempo completo presentaron menor participación en IC, la raza, el tipo de escuela secundaria y el sexo no tuvieron efectos significativos.
+El estudio sugiere que, aunque persisten las barreras iniciales de acceso a la educación superior, la necesidad de trabajar se convierte en el mecanismo dominante que modula el acceso a oportunidades académicas como la IC.
+Palabras clave: Iniciación Científica, Educación Superior, Brasil, Desigualdades Educativas
+Endereço para correspondência:
+Autor 1: Av Professor Luciano Gualberto, 315 - Sala 2047 Cidade Universitária - São Paulo - SP CEP 05508-900
+Autor 2: Av Professor Luciano Gualberto, 315 - Sala 2047 Cidade Universitária - São Paulo - SP CEP 05508-900
+[1] Universidade de São Paulo.
+[2] Universidade de São Paulo.

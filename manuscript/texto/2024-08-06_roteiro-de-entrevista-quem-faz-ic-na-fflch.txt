@@ -1,0 +1,139 @@
+Roteiro de Entrevista
+Objetivo: tentar descobrir um mecanismo que explique o porquê pessoas de um determinado perfil tentaram/conseguiram ou não fazer IC.
+Mecanismos são automatismos, são a forma como uma variável se associa a outra, a forma como essa associação se reproduz.
+Temos que entender como, de qual forma, trabalhar, ser mais velho, ser PPI, ser de baixa renda, impacta tentaram/conseguiram fazer IC, e temos que construir um argumento convincente para a associação que estamos propondo.
+Amostragem
+Vamos apostar em duas formas de amostragem: 1. a aleatória e 2. a estratificada.
+A aleatória seria realizada via sorteio na lista de e-mails da FFLCH.
+A aleatória se justificaria por controlar automaticamente quaisquer vieses de seleção.
+No entanto, infelizmente, certamente teremos vieses de resposta muito expressivos, de forma que não podemos contar muito com a amostragem aleatória, já que ela tenderia a beneficiar estudantes mais engajados com a universidade e que foram para a pós-graduação em detrimento daqueles que evadiram (justamente a amostra de quem não fez IC)
+Uma solução para os viéses da amostra aleatória é a amostra estratificada.
+Estratificamos a amostra por Curso, Gênero, Raça, Trabalho, Idade, Classe* (renda, educação e ocupação parental), e se fez IC ou não.
+Buscaremos incluir na amostra estudantes evadidos da FFLCH e da educação superior como um todo.
+Para acessar os indivíduos, utilizaremos o método de bola de neve para conseguir pessoas mais velhas formadas no curso, pedido ativamente por conhecidos (que tenham contato) que fazem parte dos subgrupos que nos interessam.
+Critérios para a estratificação da amostra
+Pretendemos conduzir cerca de 20 entrevistas.
+Incorporando metade de mulheres, homens, 40% PPI, 50% Letras, 12,5% para cada um dos outros cursos, 45% que trabalharam durante a graduação. 50% que entraram na graduação com 21 anos ou menos. 30% que entraram na graduação com 25 anos ou mais.
+Roteiro de Entrevista
+A ideia é que o entrevistado imagine que está na graduação (caso ele seja egresso).
+Entrevistadora: Cumprimenta o entrevistado. informa que será uma entrevista de 10-15 minutos.
+Pede autorização para gravar a entrevista e confirma a assinatura do termo de consentimento.
+Inicia a gravação.
+Oriente o entrevistado a responder como se estivesse acabando a sua graduação, não hoje.
+Esta é uma entrevista retrospectiva.
+Se inspirar aqui: https://acervo.fuvest.br/fuvest/2024/fuvest_2024_qase_inscritos_carreira.pdf
+Perguntas:
+Transformar isso em um Google Forms
+1.
+Qual curso você fez na FFLCH?
+    - Ciências Sociais
+    - Filosofia
+    - Letras
+    - História
+    - Geografia
+    - Outro
+2.
+Qual ano de ingresso na FFLCH?
+    - Listar ano
+3.
+Sexo:
+    - Masculino
+    - Feminino
+    - Outro
+4.
+Raça/cor:
+    - Branca
+    - Parda
+    - Preta
+    - Amarela
+    - Indígena
+5.
+Idade:
+6.
+Qual era sua renda familiar em termos de SM nos valores de 2019. (pensar em termos de SM e em termos de Valores).
+    - Até 1 SM - R$ 998
+    - De 1 a 2 SM - R$ 998 - R$ 1.996
+    - De 2 a 3 SM - R$ 1.996 - R$ 2.994
+    - De 3 a 5 SM - R$ 2.994 - R$ 3.992
+    - De 5 a 7 SM - R$ 3.992- R$ 6.986
+    - De 7 a 10 SM - R$ 6.986 - R$ 9.980
+    - De 10 a 15 SM - R$ 9.980 - R$ 14.970
+    - De 15 a 20 SM - R$ 14.970 - R$ 19.960
+    - Acima de 20 SM - R$ 19.960
+7.
+Educação parental.
+    - Não estudou
+    - Ensino Fundamental incompleto
+    - Ensino Fundamental completo
+    - Ensino Médio incompleto
+    - Ensino Médio completo
+    - Ensino Superior incompleto
+    - Ensino Superior completo
+    - Pós-graduação incompleta
+    - Pós-graduação completa
+    - Não sei
+    - Não possuo responsável
+8.
+Ocupação parental
+    - USAR CATEGORIAS DA FUVEST (Ou alguma tipologia ocupacional EGP?)
+9.
+Você trabalhou antes ou durante a graduação?
+    - Formal 40h.
+    - Formal meio período.
+    - Informal.
+    - Não.
+10.
+Você estagiou durante a graduação?
+    - Sim
+    - Não
+11.
+Você chegou a tentar fazer IC?
+    - Sim
+    - Não
+  (SE NÃO FEZ IC)
+12.
+Porque não fez IC? [resposta espontânea]
+13.
+Porque não tentou fazer IC [categoria mais próxima da resposta espontânea]
+    - Não tinha tema;
+    - Trabalho não deixava;
+    - Tinha medo ou sofreu discriminação de docente;
+    - Não se sentia confiante;
+    - Pagava pouco;
+      i.
+Outro?
+Descrever:
+14.
+Você acha que te prejudicou/você se arrepende de não ter feito?
+    - Sim
+    - Não
+      i.
+Porque?
+15.
+Pensando retrospectivamente, se fosse tentar fazer IC, o que precisaria ser diferente? [resposta espontânea]
+  (SE FEZ IC)
+16.
+Como conseguiu a IC? [resposta espontânea]
+17.
+Porque tentou fazer IC? [resposta espontânea]
+18.
+Qual foi sua estratégia para conseguir fazer IC
+    i.
+Deixar responder espontaneamente;
+    ii.
+Depois perguntar por (Se não tiver contemplado antes):
+    - Busca ativa ou contato com professor
+    - Foi recrutado por professor, sem processo seletivo
+    - Participação em grupo ou projeto de pesquisa
+    - Desenvolveu um projeto
+    - Fez processo seletivo
+    - Fez disciplina com professor
+      i.  outros, quais?
+______________________________
+Próximos passos
+- ~~Termo Livre Esclarecido (geovaniomonteiro@usp.br Prazo 4 de ago. de 2024 12:00)~~
+- ~~Passar no Forms (geovaniomonteiro@usp.br Prazo 4 de ago. de 2024 12:00)~~
+- Testar roteiro entre nós quatro
+- Testar roteiro entre amigos
+- Testar roteiro com 5 pessoas desconhecidas
+- Fazer todas as 20 entrevistas.
