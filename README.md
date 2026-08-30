@@ -211,14 +211,34 @@ por `Rscript` e pelo Quarto, em qualquer máquina.
 
 ### Divergências em relação ao publicado
 
-**Tabela 3 (tipo de fomento).** Não é reproduzível com os dados deste pacote.
-A nota de fonte do artigo cita o pedido **SIC-USP Cod. #239991**, uma extração
-anterior que não acompanha o repositório — e a tabela publicada usa categorias
-("Bolsas FFLCH", "Bolsas Programas Reitoria (USP)", "Sem Informação sobre
-Fomento") que não existem no campo `TipoFomento` da extração #243681 aqui
-distribuída. A publicada soma 2.979 projetos; os dados disponíveis dão 2.818
-para as mesmas coortes. O `analysis/02` gera a versão reproduzível a partir do
-que existe, e diz isso no próprio código.
+**Tabela 3 (tipo de fomento).** Não é reproduzível com os dados deste pacote, e
+vale registrar o quanto isso foi testado.
+
+A tabela publicada soma 2.979 projetos e usa as categorias "Bolsas FFLCH",
+"Bolsas Programas Reitoria (USP)" e "Sem Informação sobre Fomento" — nenhuma
+das três existe no campo `TipoFomento` da extração #243681. São agrupamentos
+feitos à mão, provavelmente numa tabela dinâmica do Excel; as abas de tabela
+dinâmica que sobreviveram nos arquivos estão hoje com as células em `#REF!`.
+
+Como o agrupamento não altera o total, dá para testar o recorte
+independentemente dele. Restringindo aos 3.311 projetos de estudantes da FFLCH,
+varremos todas as combinações de janela de ano (de ingresso ou de projeto,
+início em 2009–2011, fim em 2017–2023) contra a exclusão de até três categorias
+de `situacao`. **Nenhuma combinação produz 2.979 projetos.** As mais próximas
+são 2.922 (projetos de 2010–2021) e 3.015 (coortes 2009–2022).
+
+A nota de fonte do artigo aponta para o pedido **SIC-USP Cod. #239991**, mas
+essa pista foi verificada e não se sustenta: a resposta ao #239991 é um
+cadastro de 17.700 graduandos da FFLCH (2010–2023) com ingresso, status e
+conclusão, **sem nenhum campo de fomento ou de Iniciação Científica**. Seus N
+por coorte (1.003 em 2010, 1.069 em 2011, …) também não são os da Tabela 1
+(1.732, 1.759, …), que saem do #243654. A nota de fonte, que credita
+"#239991 e #24368" a todas as tabelas, é imprecisa: as tabelas que reproduzem
+foram construídas a partir do #243654 e do #243681.
+
+A origem da Tabela 3, portanto, permanece desconhecida. O `analysis/02` gera a
+versão reproduzível a partir do que existe (2.818 projetos das coortes
+2010–2022) e diz isso no próprio código.
 
 **Rodapé da Tabela 4.** A tabela publicada é internamente inconsistente: o
 bloco `AIC = 10537,63 / BIC = 10661,46 / Pseudo-R² = 0,054` corresponde ao
