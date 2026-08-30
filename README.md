@@ -158,6 +158,39 @@ cursou o ensino fundamental), mas `ef2` é o Item 15, que pergunta onde cursou
 o ensino **médio**, apesar do prefixo `ef`. `em` é o Item 16 (tipo de ensino
 médio concluído).
 
+### Material auxiliar
+
+`data-raw/auxiliar/` reúne o restante do material de origem do projeto. Nada
+disso entra no pipeline: são dados que sustentam passagens do artigo ou que
+foram usados em fases anteriores da pesquisa, versionados para completar a
+proveniência.
+
+| Arquivo | O que é |
+|---|---|
+| `dicionario-variaveis-sic-usp.xlsx` | dicionário de dados dos pedidos #243654 e #243681 |
+| `sic-usp-239991-graduandos-fflch.xlsx` | pedido #239991: 17.700 graduandos da FFLCH (2010–2023) com ingresso, status e ano de conclusão |
+| `sic-usp-239991-ciencias-sociais.xlsx` | recorte de Ciências Sociais do mesmo pedido |
+| `sic-usp-243681-ic-fflch.xlsx` | recorte FFLCH do Atena: 3.311 projetos de IC |
+| `sic-usp-243681-ciencias-sociais-ingressantes.xlsx` | ingressantes de Ciências Sociais |
+| `evasao-2018-2.xlsx` | dados de evasão por coorte |
+
+O pedido **#239991** merece um aviso: apesar de o artigo o citar na nota de
+fonte das tabelas, ele **não** é a origem de nenhuma delas — não tem campo de
+fomento e seus N por coorte não são os publicados (ver "Divergências"). Está
+aqui por ser parte do histórico do projeto, não por ser insumo de análise.
+
+Dois arquivos do acervo foram **deliberadamente deixados de fora** por conterem
+dados pessoais que os microdados do SIC-USP não têm:
+
+- uma extração do sistema Atena de maio/2022 com nome, e-mail e número USP de
+  estudantes e orientadores;
+- o levantamento do Programa Unificado de Bolsas da FFLCH (2015–2023), que
+  inclui uma lista de 713 docentes com e-mail institucional.
+
+O segundo é a fonte dos números do PUB citados nas limitações do artigo (976
+bolsas concedidas na unidade contra 99 registradas no Atena). Quem precisar
+deles deve solicitá-los à Pró-Reitoria de Pesquisa.
+
 ---
 
 ## O que este pacote conserta
