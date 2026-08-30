@@ -3,3 +3,4 @@ project:
   output-dir: docs
   render:
     - replication-report.qmd
+    - paper.qmd

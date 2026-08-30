@@ -5,9 +5,13 @@ sobre as desigualdades socioeconômicas no acesso à Iniciação Científica
 FFLCH-USP (2010–2022)*, de **Tales Mançano** ([0000-0001-5923-9743](https://orcid.org/0000-0001-5923-9743))
 e **Victor Alcantara** ([0000-0001-8846-9652](https://orcid.org/0000-0001-8846-9652)).
 
+📄 **[O artigo, com todo o código](https://mancano-tales.github.io/Quem-faz-IC/paper.html)** —
+o texto integral com cada tabela e figura calculada na compilação, e o código
+de cada resultado à vista.
+📕 **[Working paper em PDF](https://mancano-tales.github.io/Quem-faz-IC/working-paper.pdf)** —
+o mesmo documento, sem código, para circulação.
 📊 **[Relatório de replicação](https://mancano-tales.github.io/Quem-faz-IC/)** —
-cada tabela e figura do artigo, gerada a partir dos microdados, com os números
-publicados ao lado para conferência.
+a conferência número a número contra a versão publicada.
 
 ---
 
@@ -77,8 +81,13 @@ regrava tudo o que está em `outputs/`. Leva alguns minutos — a leitura dos
 34 MB de `.xlsx` brutos é a parte lenta. Para gerar o relatório em HTML:
 
 ```bash
-quarto render replication-report.qmd
+quarto render
 ```
+
+Isso gera os três documentos em `docs/`: o artigo em HTML com o código à vista,
+o working paper em PDF sem código, e o relatório de replicação. O `paper.qmd`
+produz os dois primeiros a partir do mesmo fonte — o PDF omite o código pela
+opção `echo = knitr::is_html_output()` no bloco de setup.
 
 Os scripts também rodam isoladamente, na ordem numérica. Cada um lê o que
 precisa do disco e não depende de objetos deixados na memória pelo anterior.
@@ -89,6 +98,7 @@ precisa do disco e não depende de objetos deixados na memória pelo anterior.
 
 ```
 ├── run_all.R                  executa o pipeline inteiro
+├── paper.qmd                  o artigo (→ docs/paper.html e working-paper.pdf)
 ├── replication-report.qmd     relatório de replicação (→ docs/index.html)
 │
 ├── data-raw/                  microdados como recebidos do SIC-USP
